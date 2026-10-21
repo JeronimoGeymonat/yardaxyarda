@@ -354,3 +354,9 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
  .yxy-burger{top:17px;left:18px}
  .yxy-burger+.yxy-brand{margin-left:57px}
 }
+/* Semana 4 · Player Stats · cuadro amarillo: publicidad */
+.spot-w4pad{display:none}
+.aside-card.insight.w4padmode .spot-w4pad{display:block}
+.aside-card.insight.w4padmode>*:not(.eyebrow):not(.spot-w4pad){display:none!important}
+/* etiqueta "Publicidad" arriba de la imagen (sin tapar el anuncio) */
+.w3ad-tag{position:static;align-self:flex-start}
