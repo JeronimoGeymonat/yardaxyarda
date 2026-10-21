@@ -71,7 +71,8 @@
    "js/imagenes/09-s7-tackleador-yds-mezcladas.js",
    "js/spotlight/13-semana7-player-stats-videos.js",
    "js/insights/08-castigos-s7.js",
-   "js/semanas/14-portada-s8.js"
+   "js/semanas/14-portada-s8.js",
+   "js/base/15-analitica-eventos.js"
  ];
  window.YXY={};
  Promise.all(DATOS.map(n=>fetch('data/'+n+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('data/'+n+'.json');return r.json()}).then(j=>{YXY[n]=j})))

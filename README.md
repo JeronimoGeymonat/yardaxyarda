@@ -61,3 +61,22 @@ En GitHub Pages funciona directamente.
 1. Sube **todo el contenido de esta carpeta** a la raíz de tu repositorio (rama `main`). Ningún archivo pasa de 25 MB, así que puedes arrastrarlos en la web de GitHub.
 2. Ve a **Settings → Pages → Build and deployment → Source: Deploy from a branch**, elige `main` y la carpeta `/ (root)`, y guarda.
 3. En uno o dos minutos GitHub Pages mostrará la URL (por ejemplo `https://tu-usuario.github.io/yardaxyarda/`).
+
+## Analítica (Google Analytics 4 · `G-XP9Q2SMLVE`)
+
+- `js/base/00-google-analytics.js` carga Google Analytics (se llama desde `<head>` en `index.html`).
+- `js/base/15-analitica-eventos.js` envía los eventos de clic y muestra el aviso de cookies la primera vez.
+
+| Evento | Cuándo | Parámetro principal |
+|---|---|---|
+| `semana_cambio` | elige una semana | `semana` |
+| `conferencia_cambio` | 14 GRANDES / NACIONAL | `conferencia` |
+| `pestana_cambio` | Overview / Player stats / Team stats | `pestana` |
+| `team_stats_vista` | Tabla general / Insights | `vista` |
+| `equipo_ver` (+ `page_view`) | abre la página de un equipo | `equipo` |
+| `cronica_abrir` | abre la crónica | `titulo` |
+| `video_reproducir` / `video_sonido` | le da play / activa el sonido | `video` |
+| `credito_clic` | clic a un crédito de Instagram u otro enlace externo | `cuenta`, `url` |
+| `menu_clic` | clic en el menú lateral | `opcion` |
+
+Todos llevan además `semana_actual` y `conferencia_actual`. Para usar los parámetros en los reportes, regístralos en GA4 → Administrar → Definiciones personalizadas.
