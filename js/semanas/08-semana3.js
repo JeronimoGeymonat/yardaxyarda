@@ -1,0 +1,24 @@
+/* ===== Semana 3: líderes (mismo template que semana 5) + pestañas Overview / Player stats / Team stats ===== */
+const renderBeforeW3Stats=render;
+render=function(){renderBeforeW3Stats();
+ if($('season').value!=='w3')return;
+ const nac=division==='nacional',layout=document.querySelector('.layout'),left=layout.firstElementChild,box=document.querySelector('.aside-card.insight');
+ const datos=[...document.querySelectorAll('.aside-card')].find(c=>c.querySelector('h3')?.textContent==='Datos del tablero');
+ layout.style.display='';left.classList.add('w4col');
+ if(w4Nodes.wr.parentNode!==left)left.appendChild(w4Nodes.wr);
+ if(w4Nodes.st.parentNode!==left)left.appendChild(w4Nodes.st);
+ if(datos)datos.style.display='none';
+ document.querySelector('.tabs').style.display='';
+ document.querySelector('.filters').style.display='';['group','category','search'].forEach(id=>{if($(id))$(id).style.display=''});
+ const ov=tab==='overview',pl=tab==='players',tm=tab==='teams';
+ $('cards').classList.toggle('hidden',tm);$('cards').classList.add('plain');
+ $('weekly-results').hidden=!(ov&&!nac);
+ $('st4').hidden=!tm;
+ box.classList.remove('w4mode','w6mode','w6pmode','w6tmode','w6imode');box.classList.add('empty');
+ $('heading').textContent=tm?'Estadísticas por equipo · Tabla general':pl?'Estadísticas de jugadores · Semana 3':(nac?'Líderes · Semana 3':'Líderes y resultados · Semana 3');
+ $('league').textContent='ONEFA / '+(nac?'NACIONAL':'14 GRANDES')+' / Semana 3';
+ $('source-note').textContent='Fuente: ONEFA · Liga Mayor 2026 · '+(nac?'Conferencia Nacional':'Conferencia 14 Grandes')+' · Semana 3';
+ $('hero-sub').textContent='Los líderes de 14 GRANDES y NACIONAL · Estadísticas de la semana 3.';
+};
+render();
+$('group').onchange=()=>render();$('search').oninput=()=>render();
