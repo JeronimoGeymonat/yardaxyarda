@@ -360,3 +360,16 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .aside-card.insight.w4padmode>*:not(.eyebrow):not(.spot-w4pad){display:none!important}
 /* etiqueta "Publicidad" arriba de la imagen (sin tapar el anuncio) */
 .w3ad-tag{position:static;align-self:flex-start}
+/* Barra de semanas (debajo de 14 GRANDES / NACIONAL) */
+.yxy-weeks{max-width:1360px;margin:0 auto;padding:0 32px 16px;display:flex;justify-content:flex-end;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.yxy-weeks::-webkit-scrollbar{display:none}
+.yxy-weeks[hidden]{display:none}
+.yxy-weeks button{flex:none;font:bold 12px 'Courier New',ui-monospace,monospace;letter-spacing:1px;text-transform:uppercase;padding:8px 12px;background:transparent;color:#ffb000;border:1px solid #ffb000;cursor:pointer;white-space:nowrap}
+.yxy-weeks button:hover{background:#2a1c00}
+.yxy-weeks button.active{background:#ffb000;color:#0a0700}
+.yxy-weeks button.cal{border-style:dashed;color:#d99400}
+.yxy-weeks button.cal.active{color:#0a0700}
+@media(max-width:1100px){.yxy-weeks{justify-content:flex-start}}
+@media(max-width:700px){.yxy-weeks{padding:0 18px 14px}.yxy-weeks .lbl{display:none}.yxy-weeks button{padding:9px 12px;min-width:44px}}
+.yxy-weeks-lbl{display:none}
+@media(max-width:700px){.yxy-weeks-lbl{display:flex;align-items:center;position:sticky;left:-18px;z-index:1;flex:none;margin-left:-18px;padding:0 10px 0 18px;background:#120d00;font:bold 10px 'Courier New',ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase;color:#d99400;box-shadow:8px 0 10px -4px #120d00}}

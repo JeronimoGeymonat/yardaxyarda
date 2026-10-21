@@ -75,6 +75,7 @@
    "js/spotlight/14-semana3-publicidad.js",
    "js/spotlight/15-semana7-team-stats-publicidad.js",
    "js/spotlight/16-semana4-player-stats-publicidad.js",
+   "js/base/17-barra-semanas.js",
    "js/base/16-movil-semana-arriba.js",
    "js/base/15-analitica-eventos.js"
  ];
