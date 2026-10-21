@@ -338,3 +338,9 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .w3ad-btn{align-self:stretch;text-align:center;white-space:nowrap;background:#ffb000;color:#120c00;font-weight:bold;font-size:12px;padding:8px 14px;letter-spacing:1px}
 .w3ad:hover .w3ad-btn,.w3ad:focus-visible .w3ad-btn{background:#ffcf66}
 .w3ad-note{display:block;margin-top:6px;font-size:11px;color:#3a2800}
+.w3ad-handle{font-size:clamp(20px,2vw,24px);font-weight:bold;color:#ffb000;text-shadow:0 0 10px #ffb00066;margin-top:2px}
+.w3ad-note a{color:#0a0700;font-weight:bold}
+/* Semana 7 · Team Stats · cuadro amarillo: publicidad */
+.spot-w7tad{display:none}
+.aside-card.insight.w7tadmode .spot-w7tad{display:block}
+.aside-card.insight.w7tadmode>*:not(.eyebrow):not(.spot-w7tad){display:none!important}
