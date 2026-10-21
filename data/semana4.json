@@ -1,0 +1,183 @@
+{
+  "lideres": {
+    "grandes": [
+      {
+        "title": "Top QBs",
+        "metrics": ["Passing Yds", "Passing TDs"],
+        "rows": [
+          {"team": "Tec Mty", "name": "Fernando Sarabia", "values": [1055, 10]},
+          {"team": "Tec Pue", "name": "Edson Rincon", "values": [972, 10]},
+          {"team": "UNAM", "name": "Leonardo Garza", "values": [906, 8]},
+          {"team": "UANL", "name": "Mirko Martos", "values": [705, 9]},
+          {"team": "Anahuac N", "name": "Iram Ayala", "values": [700, 5]},
+          {"team": "Tec Ccm", "name": "Jorge Gonzalez", "values": [642, 5]},
+          {"team": "Burros Blancos", "name": "Aldo Herrera", "values": [623, 6]}
+        ]
+      },
+      {
+        "title": "Top RBs",
+        "metrics": ["Rushing Yds", "Rushing TDs"],
+        "rows": [
+          {"team": "Tec Cem", "name": "Alejandro Hernandez", "values": [368, 4]},
+          {"team": "UDLAP", "name": "Juan Jose Acosta", "values": [340, 4]},
+          {"team": "UANL", "name": "Angel Alvarado", "values": [325, 4]},
+          {"team": "Tec Ccm", "name": "Jorge Gonzalez", "values": [307, 7]},
+          {"team": "Tec Mty", "name": "Fernando Mayen", "values": [298, 9]},
+          {"team": "UNAM", "name": "Hussein Santillan", "values": [261, 5]},
+          {"team": "Tec Cem", "name": "Patricio Macias", "values": [221, 2]}
+        ]
+      },
+      {
+        "title": "Top WRs",
+        "metrics": ["Rec Yds", "Rec", "Rec Tds"],
+        "rows": [
+          {"team": "Tec Cem", "name": "Alejandro Urtusuastegui", "values": [350, 23, 2]},
+          {"team": "Burros Blancos", "name": "Alan Rivera", "values": [280, 13, 4]},
+          {"team": "Tec Pue", "name": "Patricio Hernandez", "values": [251, 25, 1]},
+          {"team": "Tec Pue", "name": "Emilio Lozada", "values": [248, 17, 5]},
+          {"team": "Tec Mty", "name": "Daniel Santos", "values": [245, 8, 4]},
+          {"team": "UANL", "name": "Christian Espinoza", "values": [221, 12, 4]},
+          {"team": "Tec Ccm", "name": "Carlo Confalonieri", "values": [213, 21, 1]}
+        ]
+      },
+      {
+        "title": "Lider Tackleador",
+        "metrics": ["Tackles"],
+        "rows": [
+          {"team": "Tec Gdl", "name": "Jose Rodriguez", "values": [26]},
+          {"team": "Tec Ccm", "name": "Santiago Ulloa", "values": [25]},
+          {"team": "Tec Ccm", "name": "Pedro Rosales", "values": [24]},
+          {"team": "Tec Gdl", "name": "Aldo Soto", "values": [24]},
+          {"team": "UANL", "name": "Gael Reyes", "values": [23]}
+        ]
+      },
+      {
+        "title": "Lider Yds Mezcladas",
+        "metrics": ["Total Yds"],
+        "rows": [
+          {"team": "Tec Ccm", "name": "Jose Rodriguez", "values": [506]},
+          {"team": "UNAM", "name": "Jadhiel Ponce", "values": [443]},
+          {"team": "Tec Cem", "name": "Alejandro Urtusuastegui", "values": [411]},
+          {"team": "Tec Cem", "name": "Alejandro Hernandez", "values": [368]},
+          {"team": "UNAM", "name": "Hussein Santillan", "values": [364]}
+        ]
+      }
+    ],
+    "nacional": [
+      {
+        "title": "Top QBs",
+        "metrics": ["Passing Yds", "Passing TDs"],
+        "rows": [
+          {"team": "UAG", "name": "Jesus Reyes", "values": [969, 11]},
+          {"team": "UV", "name": "Jair Gonzalez", "values": [733, 8]},
+          {"team": "Anahuac Q", "name": "Claudio Bautista", "values": [691, 8]},
+          {"team": "ITSON", "name": "Jesus Gutierrez", "values": [683, 7]},
+          {"team": "UACH", "name": "Andres Jimenez", "values": [621, 8]},
+          {"team": "Acatlan", "name": "Omar Valadez", "values": [614, 5]},
+          {"team": "UACJ", "name": "Eugenio Fernandez", "values": [559, 10]}
+        ]
+      },
+      {
+        "title": "Top RBs",
+        "metrics": ["Rushing Yds", "Rushing TDs"],
+        "rows": [
+          {"team": "UADEC", "name": "Nestor Molina", "values": [297, 2]},
+          {"team": "UACH", "name": "Hugo Dominguez", "values": [242, 3]},
+          {"team": "UAEM", "name": "Diego Hernandez", "values": [233, 2]},
+          {"team": "Anahuac Q", "name": "Axel Fernandez", "values": [211, 4]},
+          {"team": "UACH", "name": "Jorge Lucero", "values": [198, 3]},
+          {"team": "UADEC", "name": "Jose Machorro", "values": [197, 1]},
+          {"team": "Tepeyac", "name": "Axel Carreño", "values": [192, 2]}
+        ]
+      },
+      {
+        "title": "Top WRs",
+        "metrics": ["Rec Yds", "Rec", "Rec Tds"],
+        "rows": [
+          {"team": "UIW", "name": "Max Navarro", "values": [370, 15, 3]},
+          {"team": "UAG", "name": "Jose Vargas", "values": [291, 13, 3]},
+          {"team": "UACH", "name": "Santiago Najera", "values": [245, 12, 5]},
+          {"team": "UABC", "name": "Rommel Ruiz", "values": [235, 14, 3]},
+          {"team": "ITSON", "name": "Juan Portillo", "values": [215, 5, 2]},
+          {"team": "Anahuac Q", "name": "Alejandro Mar", "values": [213, 8, 2]},
+          {"team": "UV", "name": "Juan Guevara", "values": [213, 11, 3]}
+        ]
+      },
+      {
+        "title": "Lider Tackleador",
+        "metrics": ["Tackles"],
+        "rows": [
+          {"team": "Panteras S21", "name": "Richard Villanon", "values": [32]},
+          {"team": "ITSON", "name": "Kevin Sanchez", "values": [27]},
+          {"team": "UADEC", "name": "Jose Vazquez", "values": [25]},
+          {"team": "UACH", "name": "Fabian Mora", "values": [24]},
+          {"team": "UIW", "name": "Isai Martinez", "values": [20]}
+        ]
+      },
+      {
+        "title": "Lider Yds Mezcladas",
+        "metrics": ["Total Yds"],
+        "rows": [
+          {"team": "UIW", "name": "Max Navarro", "values": [523]},
+          {"team": "Panteras S21", "name": "Johan Villalon", "values": [396]},
+          {"team": "UADEC", "name": "Nestor Molina", "values": [337]},
+          {"team": "UAT", "name": "Eric Limon", "values": [334]},
+          {"team": "Red Wolves", "name": "Genaro Flores", "values": [317]}
+        ]
+      }
+    ]
+  },
+  "tabla": {
+    "grandes": [
+      {"pos": 1, "team": "Auténticos Tigres UANL", "w": 3, "l": 0, "pf": 108, "pc": 38, "pts": 6},
+      {"pos": 1, "team": "Borregos Monterrey", "w": 3, "l": 0, "pf": 166, "pc": 100, "pts": 6},
+      {"pos": 1, "team": "Pumas CU", "w": 3, "l": 1, "pf": 128, "pc": 153, "pts": 6},
+      {"pos": 2, "team": "Aztecas UDLAP", "w": 2, "l": 2, "pf": 84, "pc": 70, "pts": 4},
+      {"pos": 2, "team": "Águilas Blancas IPN", "w": 2, "l": 1, "pf": 80, "pc": 82, "pts": 4},
+      {"pos": 2, "team": "Borregos Guadalajara", "w": 2, "l": 2, "pf": 54, "pc": 87, "pts": 4},
+      {"pos": 2, "team": "Borregos Puebla", "w": 2, "l": 2, "pf": 153, "pc": 97, "pts": 4},
+      {"pos": 2, "team": "Leones Anáhuac MEX", "w": 2, "l": 2, "pf": 80, "pc": 101, "pts": 4},
+      {"pos": 2, "team": "Burros Blancos IPN", "w": 2, "l": 2, "pf": 89, "pc": 109, "pts": 4},
+      {"pos": 2, "team": "Borregos CCM", "w": 2, "l": 2, "pf": 119, "pc": 111, "pts": 4},
+      {"pos": 3, "team": "Linces UVM", "w": 1, "l": 2, "pf": 71, "pc": 38, "pts": 2},
+      {"pos": 3, "team": "Borregos CEM", "w": 1, "l": 3, "pf": 112, "pc": 100, "pts": 2},
+      {"pos": 4, "team": "Zorros CETYS", "w": 0, "l": 3, "pf": 17, "pc": 88, "pts": 0},
+      {"pos": 4, "team": "Leones Anáhuac Cancún", "w": 0, "l": 3, "pf": 43, "pc": 130, "pts": 0}
+    ],
+    "nacional": [
+      {
+        "name": "Grupo Norte",
+        "rows": [
+          {"pos": 1, "team": "Águilas UACH", "w": 4, "l": 0, "pf": 141, "pc": 30, "pts": 8},
+          {"pos": 2, "team": "Potros ITSON", "w": 3, "l": 1, "pf": 95, "pc": 41, "pts": 6},
+          {"pos": 2, "team": "Indios UACJ", "w": 3, "l": 1, "pf": 106, "pc": 60, "pts": 6},
+          {"pos": 3, "team": "Lobos UAdeC", "w": 1, "l": 3, "pf": 58, "pc": 86, "pts": 2},
+          {"pos": 3, "team": "Cimarrones UABC", "w": 1, "l": 3, "pf": 28, "pc": 121, "pts": 2}
+        ]
+      },
+      {
+        "name": "Grupo Bajío",
+        "rows": [
+          {"pos": 1, "team": "Leones Anáhuac QRO", "w": 4, "l": 0, "pf": 183, "pc": 14, "pts": 8},
+          {"pos": 1, "team": "Tecos UAG", "w": 4, "l": 0, "pf": 118, "pc": 26, "pts": 8},
+          {"pos": 2, "team": "Cardinals UIW", "w": 2, "l": 2, "pf": 59, "pc": 103, "pts": 4},
+          {"pos": 3, "team": "Red Wolves QRO", "w": 1, "l": 3, "pf": 34, "pc": 127, "pts": 2},
+          {"pos": 3, "team": "Lobos ULM", "w": 1, "l": 3, "pf": 22, "pc": 83, "pts": 2},
+          {"pos": 4, "team": "Correcaminos UAT", "w": 0, "l": 4, "pf": 31, "pc": 180, "pts": 0}
+        ]
+      },
+      {
+        "name": "Grupo Centro",
+        "rows": [
+          {"pos": 1, "team": "Pumas Acatlán", "w": 3, "l": 0, "pf": 63, "pc": 31, "pts": 6},
+          {"pos": 1, "team": "Halcones UV", "w": 3, "l": 1, "pf": 56, "pc": 82, "pts": 6},
+          {"pos": 2, "team": "Búhos IPN", "w": 2, "l": 1, "pf": 70, "pc": 24, "pts": 4},
+          {"pos": 2, "team": "Potros Salvajes UAEM", "w": 2, "l": 1, "pf": 83, "pc": 41, "pts": 4},
+          {"pos": 2, "team": "Frailes Tepeyac", "w": 2, "l": 2, "pf": 60, "pc": 61, "pts": 4},
+          {"pos": 3, "team": "Toros Salvajes UACh", "w": 1, "l": 3, "pf": 47, "pc": 62, "pts": 2},
+          {"pos": 4, "team": "Panteras S21", "w": 0, "l": 5, "pf": 15, "pc": 93, "pts": 0}
+        ]
+      }
+    ]
+  }
+}

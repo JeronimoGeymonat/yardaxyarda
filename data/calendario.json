@@ -1,0 +1,319 @@
+{
+  "grandes": [
+    {
+      "w": 1,
+      "g": [
+        {"f": "Jue 3-sep", "h": "6:00 PM", "s": "Disney CCM", "l": "Borregos CCM", "v": "Borregos Monterrey", "pl": 42, "pv": 49},
+        {"f": "Vie 4-sep", "h": "6:00 PM", "s": "La Fortaleza", "l": "Borregos Guadalajara", "v": "Borregos Puebla", "pl": 0, "pv": 36},
+        {"f": "Vie 4-sep", "h": "6:00 PM", "s": "Cueva del León", "l": "Leones Anáhuac MEX", "v": "Pumas CU", "pl": 28, "pv": 34},
+        {"f": "Vie 4-sep", "h": "7:00 PM", "s": "La Madriguera", "l": "Zorros CETYS", "v": "Aztecas UDLAP", "pl": 7, "pv": 30},
+        {"f": "Vie 4-sep", "h": "7:00 PM", "s": "Gaspar Mass", "l": "Auténticos Tigres UANL", "v": "Águilas Blancas IPN", "pl": 49, "pv": 7},
+        {"f": "Sáb 5-sep", "h": "12:00 PM", "s": "JOM", "l": "Linces UVM", "v": "Burros Blancos IPN", "pl": 20, "pv": 21},
+        {"f": "Sáb 5-sep", "h": "6:00 PM", "s": "Coliseo Maya", "l": "Leones Anáhuac Cancún", "v": "Borregos CEM", "pl": 28, "pv": 57}
+      ]
+    },
+    {
+      "w": 2,
+      "g": [
+        {"f": "Vie 11-sep", "h": "6:00 PM", "s": "La Fortaleza", "l": "Borregos Guadalajara", "v": "Linces UVM", "pl": 17, "pv": 13},
+        {"f": "Vie 11-sep", "h": "6:00 PM", "s": "Disney CCM", "l": "Borregos CCM", "v": "Auténticos Tigres UANL", "pl": 14, "pv": 31},
+        {"f": "Vie 11-sep", "h": "6:00 PM", "s": "Cueva del León", "l": "Leones Anáhuac MEX", "v": "Borregos CEM", "pl": 17, "pv": 14},
+        {"f": "Sáb 12-sep", "h": "11:00 AM", "s": "EOU", "l": "Pumas CU", "v": "Burros Blancos IPN", "pl": 35, "pv": 27},
+        {"f": "Sáb 12-sep", "h": "12:00 PM", "s": "Templo del Dolor", "l": "Aztecas UDLAP", "v": "Águilas Blancas IPN", "pl": 26, "pv": 28},
+        {"f": "Sáb 12-sep", "h": "1:00 PM", "s": "Cráter Azul", "l": "Borregos Puebla", "v": "Borregos Monterrey", "pl": 38, "pv": 44}
+      ]
+    },
+    {
+      "w": 3,
+      "g": [
+        {"f": "Vie 18-sep", "h": "6:00 PM", "s": "Cueva del León", "l": "Leones Anáhuac MEX", "v": "Borregos Guadalajara", "pl": 28, "pv": 17},
+        {"f": "Vie 18-sep", "h": "6:00 PM", "s": "Corral de Plástico", "l": "Borregos CEM", "v": "Borregos CCM", "pl": 24, "pv": 27},
+        {"f": "Vie 18-sep", "h": "7:00 PM", "s": "EOU", "l": "Pumas CU", "v": "Borregos Puebla", "pl": 39, "pv": 25},
+        {"f": "Sáb 19-sep", "h": "12:00 PM", "s": "JOM", "l": "Linces UVM", "v": "Zorros CETYS", "pl": 38, "pv": 0},
+        {"f": "Sáb 19-sep", "h": "2:00 PM", "s": "Casco Sto Tomás", "l": "Águilas Blancas IPN", "v": "Leones Anáhuac Cancún", "pl": 45, "pv": 7},
+        {"f": "Sáb 19-sep", "h": "2:00 PM", "s": "Wilfrido Massieu", "l": "Burros Blancos IPN", "v": "Aztecas UDLAP", "pl": 27, "pv": 0}
+      ]
+    },
+    {
+      "w": 4,
+      "g": [
+        {"f": "Vie 25-sep", "h": "6:00 PM", "s": "Disney CCM", "l": "Borregos CCM", "v": "Leones Anáhuac MEX", "pl": 36, "pv": 7},
+        {"f": "Vie 25-sep", "h": "6:00 PM", "s": "La Madriguera", "l": "Zorros CETYS", "v": "Borregos Guadalajara", "pl": 10, "pv": 20},
+        {"f": "Vie 25-sep", "h": "7:00 PM", "s": "Gaspar Mass", "l": "Auténticos Tigres UANL", "v": "Borregos CEM", "pl": 28, "pv": 17},
+        {"f": "Vie 25-sep", "h": "7:30 PM", "s": "Borregos", "l": "Borregos Monterrey", "v": "Pumas CU", "pl": 73, "pv": 20},
+        {"f": "Sáb 26-sep", "h": "12:00 PM", "s": "Templo del Dolor", "l": "Aztecas UDLAP", "v": "Leones Anáhuac Cancún", "pl": 28, "pv": 8},
+        {"f": "Sáb 26-sep", "h": "1:00 PM", "s": "Cráter Azul", "l": "Borregos Puebla", "v": "Burros Blancos IPN", "pl": 54, "pv": 14}
+      ]
+    },
+    {
+      "w": 5,
+      "g": [
+        {"f": "Vie 2-oct", "h": "6:00 PM", "s": "La Fortaleza", "l": "Borregos Guadalajara", "v": "Aztecas UDLAP", "pl": 20, "pv": 12},
+        {"f": "Mar 3-nov", "h": "7:00 PM", "s": "Gaspar Mass", "l": "Auténticos Tigres UANL", "v": "Borregos Monterrey", "pl": null, "pv": null, "rp": true},
+        {"f": "Sáb 3-oct", "h": "12:00 PM", "s": "JOM", "l": "Linces UVM", "v": "Águilas Blancas IPN", "pl": 16, "pv": 13},
+        {"f": "Sáb 3-oct", "h": "12:00 PM", "s": "EOU", "l": "Pumas CU", "v": "Borregos CEM", "pl": 34, "pv": 28},
+        {"f": "Sáb 3-oct", "h": "12:00 PM", "s": "Wilfrido Massieu", "l": "Burros Blancos IPN", "v": "Leones Anáhuac MEX", "pl": 6, "pv": 24},
+        {"f": "Sáb 3-oct", "h": "1:00 PM", "s": "Cráter Azul", "l": "Borregos Puebla", "v": "Borregos CCM", "pl": 40, "pv": 35},
+        {"f": "Sáb 3-oct", "h": "7:00 PM", "s": "Coliseo Maya", "l": "Leones Anáhuac Cancún", "v": "Zorros CETYS", "pl": 27, "pv": 21}
+      ]
+    },
+    {
+      "w": 6,
+      "g": [
+        {"f": "Vie 9-oct", "h": "6:00 PM", "s": "Disney CCM", "l": "Borregos CCM", "v": "Burros Blancos IPN", "pl": 13, "pv": 16},
+        {"f": "Vie 9-oct", "h": "7:00 PM", "s": "JOM", "l": "Linces UVM", "v": "Pumas CU", "pl": 20, "pv": 28},
+        {"f": "Vie 9-oct", "h": "7:00 PM", "s": "Corral de Plástico", "l": "Borregos CEM", "v": "Aztecas UDLAP", "pl": 21, "pv": 14},
+        {"f": "Vie 9-oct", "h": "7:30 PM", "s": "Borregos", "l": "Borregos Monterrey", "v": "Zorros CETYS", "pl": 65, "pv": 6},
+        {"f": "Sáb 10-oct", "h": "12:00 PM", "s": "Wilfrido Massieu", "l": "Águilas Blancas IPN", "v": "Leones Anáhuac MEX", "pl": 28, "pv": 38},
+        {"f": "Sáb 10-oct", "h": "1:00 PM", "s": "Cráter Azul", "l": "Borregos Puebla", "v": "Auténticos Tigres UANL", "pl": 19, "pv": 29},
+        {"f": "Sáb 10-oct", "h": "7:00 PM", "s": "Coliseo Maya", "l": "Leones Anáhuac Cancún", "v": "Borregos Guadalajara", "pl": 20, "pv": 21}
+      ]
+    },
+    {
+      "w": 7,
+      "g": [
+        {"f": "Vie 16-oct", "h": "7:00 PM", "s": "La Madriguera", "l": "Zorros CETYS", "v": "Borregos CCM", "pl": 27, "pv": 42},
+        {"f": "Vie 16-oct", "h": "7:00 PM", "s": "Corral de Plástico", "l": "Borregos CEM", "v": "Linces UVM", "pl": 49, "pv": 29},
+        {"f": "Vie 16-oct", "h": "7:00 PM", "s": "Gaspar Mass", "l": "Auténticos Tigres UANL", "v": "Leones Anáhuac MEX", "pl": 48, "pv": 23},
+        {"f": "Sáb 17-oct", "h": "12:00 PM", "s": "Wilfrido Massieu", "l": "Burros Blancos IPN", "v": "Borregos Monterrey", "pl": 21, "pv": 44},
+        {"f": "Sáb 17-oct", "h": "7:00 PM", "s": "Coliseo Maya", "l": "Leones Anáhuac Cancún", "v": "Borregos Puebla", "pl": 0, "pv": 75},
+        {"f": "Sáb 17-oct", "h": "Por definir", "s": "EOU", "l": "Pumas CU", "v": "Águilas Blancas IPN", "pl": 24, "pv": 6}
+      ]
+    },
+    {
+      "w": 8,
+      "g": [
+        {"f": "Vie 23-oct", "h": "6:00 PM", "s": "La Fortaleza", "l": "Borregos Guadalajara", "v": "Borregos CEM", "pl": null, "pv": null},
+        {"f": "Vie 23-oct", "h": "6:00 PM", "s": "Cueva del León", "l": "Leones Anáhuac MEX", "v": "Linces UVM", "pl": null, "pv": null},
+        {"f": "Vie 23-oct", "h": "7:00 PM", "s": "La Madriguera", "l": "Zorros CETYS", "v": "Auténticos Tigres UANL", "pl": null, "pv": null},
+        {"f": "Vie 23-oct", "h": "7:30 PM", "s": "Borregos", "l": "Borregos Monterrey", "v": "Leones Anáhuac Cancún", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "12:00 PM", "s": "Wilfrido Massieu", "l": "Águilas Blancas IPN", "v": "Burros Blancos IPN", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "12:00 PM", "s": "Templo del Dolor", "l": "Aztecas UDLAP", "v": "Pumas CU", "pl": null, "pv": null}
+      ]
+    },
+    {
+      "w": 9,
+      "g": [
+        {"f": "Vie 30-oct", "h": "6:00 PM", "s": "Disney CCM", "l": "Borregos CCM", "v": "Linces UVM", "pl": null, "pv": null},
+        {"f": "Vie 30-oct", "h": "6:00 PM", "s": "Corral de Plástico", "l": "Borregos CEM", "v": "Zorros CETYS", "pl": null, "pv": null},
+        {"f": "Vie 30-oct", "h": "7:00 PM", "s": "EOU 68", "l": "Pumas CU", "v": "Leones Anáhuac Cancún", "pl": null, "pv": null},
+        {"f": "Vie 30-oct", "h": "7:00 PM", "s": "Gaspar Mass", "l": "Auténticos Tigres UANL", "v": "Borregos Guadalajara", "pl": null, "pv": null},
+        {"f": "Vie 30-oct", "h": "7:30 PM", "s": "Borregos", "l": "Borregos Monterrey", "v": "Aztecas UDLAP", "pl": null, "pv": null},
+        {"f": "Sáb 31-oct", "h": "1:00 PM", "s": "Cráter Azul", "l": "Borregos Puebla", "v": "Águilas Blancas IPN", "pl": null, "pv": null}
+      ]
+    },
+    {
+      "w": 10,
+      "g": [
+        {"f": "Vie 6-nov", "h": "6:00 PM", "s": "La Fortaleza", "l": "Borregos Guadalajara", "v": "Borregos CCM", "pl": null, "pv": null},
+        {"f": "Vie 6-nov", "h": "6:00 PM", "s": "Cueva del León", "l": "Leones Anáhuac MEX", "v": "Zorros CETYS", "pl": null, "pv": null},
+        {"f": "Sáb 7-nov", "h": "12:00 PM", "s": "Templo del Dolor", "l": "Aztecas UDLAP", "v": "Borregos Puebla", "pl": null, "pv": null},
+        {"f": "Sáb 7-nov", "h": "12:00 PM", "s": "JOM", "l": "Linces UVM", "v": "Auténticos Tigres UANL", "pl": null, "pv": null},
+        {"f": "Sáb 7-nov", "h": "12:00 PM", "s": "Wilfrido Massieu", "l": "Águilas Blancas IPN", "v": "Borregos Monterrey", "pl": null, "pv": null},
+        {"f": "Sáb 7-nov", "h": "3:00 PM", "s": "Wilfrido Massieu", "l": "Burros Blancos IPN", "v": "Leones Anáhuac Cancún", "pl": null, "pv": null}
+      ]
+    }
+  ],
+  "nacional": [
+    {
+      "w": 0,
+      "g": [
+        {"f": "Sáb 29-ago", "h": "12:00 PM", "s": "La Fortaleza", "l": "Panteras S21", "v": "Halcones UV", "pl": 6, "pv": 7}
+      ],
+      "bye": "",
+      "ff": ""
+    },
+    {
+      "w": 1,
+      "g": [
+        {"f": "Vie 4-sep", "h": "6:00 PM", "s": "UACJ", "l": "Indios UACJ", "v": "Cimarrones UABC", "pl": 42, "pv": 20},
+        {"f": "Vie 4-sep", "h": "6:00 PM", "s": "Olímpico UACH", "l": "Águilas UACH", "v": "Lobos UAdeC", "pl": 21, "pv": 10},
+        {"f": "Sáb 5-sep", "h": "11:00 AM", "s": "Red Cave", "l": "Red Wolves QRO", "v": "Lobos ULM", "pl": 24, "pv": 21},
+        {"f": "Sáb 5-sep", "h": "12:00 PM", "s": "El Nido", "l": "Cardinals UIW", "v": "Tecos UAG", "pl": 3, "pv": 26},
+        {"f": "Sáb 5-sep", "h": "12:00 PM", "s": "Jaime Labastida", "l": "Frailes Tepeyac", "v": "Panteras S21", "pl": 28, "pv": 0},
+        {"f": "Sáb 5-sep", "h": "12:00 PM", "s": "Palomo Ruiz Tapia", "l": "Toros Salvajes UACh", "v": "Halcones UV", "pl": 26, "pv": 28},
+        {"f": "Sáb 5-sep", "h": "12:00 PM", "s": "FES Acatlán", "l": "Pumas Acatlán", "v": "Búhos IPN", "pl": 17, "pv": 12},
+        {"f": "Sáb 5-sep", "h": "4:00 PM", "s": "Alvizo Porras", "l": "Correcaminos UAT", "v": "Leones Anáhuac QRO", "pl": 0, "pv": 56}
+      ],
+      "bye": "Potros ITSON (Forfeit), Potros UAEMex",
+      "ff": "Potros ITSON"
+    },
+    {
+      "w": 2,
+      "g": [
+        {"f": "Vie 11-sep", "h": "3:00 PM", "s": "Olimpo Naranja", "l": "Leones Anáhuac QRO", "v": "Red Wolves QRO", "pl": 47, "pv": 7},
+        {"f": "Vie 11-sep", "h": "7:00 PM", "s": "JJ Pichardo", "l": "Potros Salvajes UAEM", "v": "Pumas Acatlán", "pl": 7, "pv": 27},
+        {"f": "Vie 11-sep", "h": "7:00 PM", "s": "Jorge Castro", "l": "Lobos UAdeC", "v": "Potros ITSON", "pl": 10, "pv": 27},
+        {"f": "Vie 11-sep", "h": "9:00 PM", "s": "Estadio Cimarrón", "l": "Cimarrones UABC", "v": "Águilas UACH", "pl": 0, "pv": 37},
+        {"f": "Sáb 12-sep", "h": "12:00 PM", "s": "El Nido", "l": "Cardinals UIW", "v": "Correcaminos UAT", "pl": 30, "pv": 24},
+        {"f": "Sáb 12-sep", "h": "12:00 PM", "s": "Wilfrido Massieu", "l": "Búhos IPN", "v": "Panteras S21", "pl": 38, "pv": 0},
+        {"f": "Sáb 12-sep", "h": "12:00 PM", "s": "Jaime Labastida", "l": "Frailes Tepeyac", "v": "Toros Salvajes UACh", "pl": 14, "pv": 7},
+        {"f": "Sáb 12-sep", "h": "6:00 PM", "s": "23 de octubre", "l": "Tecos UAG", "v": "Lobos ULM", "pl": 21, "pv": 0}
+      ],
+      "bye": "Halcones UV, Indios UACJ (forfeit)",
+      "ff": "Indios UACJ"
+    },
+    {
+      "w": 3,
+      "g": [
+        {"f": "Vie 18-sep", "h": "4:30 PM", "s": "Olímpico UACH", "l": "Águilas UACH", "v": "Red Wolves QRO", "pl": 52, "pv": 0},
+        {"f": "Vie 18-sep", "h": "6:00 PM", "s": "Jorge Castro", "l": "Lobos UAdeC", "v": "Tecos UAG", "pl": 17, "pv": 24},
+        {"f": "Vie 18-sep", "h": "6:00 PM", "s": "UACJ", "l": "Indios UACJ", "v": "Cardinals UIW", "pl": 49, "pv": 19},
+        {"f": "Vie 18-sep", "h": "6:00 PM", "s": "Campo Hundido", "l": "Potros ITSON", "v": "Correcaminos UAT", "pl": 47, "pv": 0},
+        {"f": "Vie 18-sep", "h": "7:00 PM", "s": "JJ Pichardo", "l": "Potros Salvajes UAEM", "v": "Frailes Tepeyac", "pl": 35, "pv": 7},
+        {"f": "Vie 18-sep", "h": "7:00 PM", "s": "Estadio Cimarrón", "l": "Cimarrones UABC", "v": "Leones Anáhuac QRO", "pl": 7, "pv": 42},
+        {"f": "Sáb 19-sep", "h": "12:00 PM", "s": "Palomo Ruiz Tapia", "l": "Toros Salvajes UACh", "v": "Búhos IPN", "pl": 7, "pv": 20},
+        {"f": "Sáb 19-sep", "h": "4:00 PM", "s": "Campo de los Sueños", "l": "Halcones UV", "v": "Panteras S21", "pl": 14, "pv": 9}
+      ],
+      "bye": "Pumas Acatlán, Lobos ULM (forfeit)",
+      "ff": "Lobos ULM"
+    },
+    {
+      "w": 4,
+      "g": [
+        {"f": "Vie 25-sep", "h": "6:00 PM", "s": "Campo Hundido", "l": "Potros ITSON", "v": "Águilas UACH", "pl": 20, "pv": 31},
+        {"f": "Vie 25-sep", "h": "7:00 PM", "s": "Jorge Castro", "l": "Lobos UAdeC", "v": "Indios UACJ", "pl": 21, "pv": 14},
+        {"f": "Sáb 26-sep", "h": "11:00 AM", "s": "Red Cave", "l": "Red Wolves QRO", "v": "Cardinals UIW", "pl": 3, "pv": 7},
+        {"f": "Sáb 26-sep", "h": "12:00 PM", "s": "La Fortaleza", "l": "Panteras S21", "v": "Toros Salvajes UACh", "pl": 0, "pv": 7},
+        {"f": "Sáb 26-sep", "h": "12:00 PM", "s": "FES Acatlán", "l": "Pumas Acatlán", "v": "Frailes Tepeyac", "pl": 19, "pv": 12},
+        {"f": "Sáb 26-sep", "h": "12:00 PM", "s": "23 de octubre", "l": "Tecos UAG", "v": "Correcaminos UAT", "pl": 47, "pv": 6},
+        {"f": "Sáb 26-sep", "h": "3:00 PM", "s": "Estadio ULM", "l": "Lobos ULM", "v": "Leones Anáhuac QRO", "pl": 0, "pv": 38},
+        {"f": "Sáb 26-sep", "h": "4:00 PM", "s": "Campo de los Sueños", "l": "Halcones UV", "v": "Potros Salvajes UAEM", "pl": 7, "pv": 41}
+      ],
+      "bye": "Búhos Guinda IPN, Cimarrones UABC (forfeit)",
+      "ff": "Cimarrones UABC"
+    },
+    {
+      "w": 5,
+      "g": [
+        {"f": "Vie 2-oct", "h": "6:00 PM", "s": "UACJ", "l": "Indios UACJ", "v": "Águilas UACH", "pl": 0, "pv": 51},
+        {"f": "Vie 2-oct", "h": "9:00 PM", "s": "Estadio Cimarrón", "l": "Cimarrones UABC", "v": "Potros ITSON", "pl": null, "pv": null, "nr": true},
+        {"f": "Sáb 3-oct", "h": "11:00 AM", "s": "Red Cave", "l": "Red Wolves QRO", "v": "Tecos UAG", "pl": 0, "pv": 19},
+        {"f": "Sáb 3-oct", "h": "12:00 PM", "s": "El Nido", "l": "Cardinals UIW", "v": "Leones Anáhuac QRO", "pl": 0, "pv": 52},
+        {"f": "Sáb 3-oct", "h": "12:00 PM", "s": "La Fortaleza", "l": "Panteras S21", "v": "Pumas Acatlán", "pl": 7, "pv": 49},
+        {"f": "Sáb 3-oct", "h": "12:00 PM", "s": "Jaime Labastida", "l": "Frailes Tepeyac", "v": "Halcones UV", "pl": 21, "pv": 6},
+        {"f": "Sáb 3-oct", "h": "3:00 PM", "s": "Wilfrido Massieu", "l": "Búhos IPN", "v": "Potros Salvajes UAEM", "pl": 14, "pv": 17},
+        {"f": "Sáb 3-oct", "h": "4:00 PM", "s": "Alvizo Porras", "l": "Correcaminos UAT", "v": "Lobos ULM", "pl": 12, "pv": 14}
+      ],
+      "bye": "Toros UACh, Lobos UAdeC (forfeit)",
+      "ff": "Lobos UAdeC"
+    },
+    {
+      "w": 6,
+      "g": [
+        {"f": "Vie 9-oct", "h": "6:00 PM", "s": "Jorge Castro", "l": "Lobos UAdeC", "v": "Cimarrones UABC", "pl": 42, "pv": 13},
+        {"f": "Vie 9-oct", "h": "7:00 PM", "s": "Campo Hundido", "l": "Potros ITSON", "v": "Indios UACJ", "pl": 27, "pv": 7},
+        {"f": "Vie 9-oct", "h": "7:00 PM", "s": "JJ Pichardo", "l": "Potros Salvajes UAEM", "v": "Panteras S21", "pl": 38, "pv": 0},
+        {"f": "Sáb 10-oct", "h": "11:00 AM", "s": "Olimpo Naranja", "l": "Leones Anáhuac QRO", "v": "Tecos UAG", "pl": 17, "pv": 14},
+        {"f": "Sáb 10-oct", "h": "12:00 PM", "s": "FES Acatlán", "l": "Pumas Acatlán", "v": "Toros Salvajes UACh", "pl": 42, "pv": 0},
+        {"f": "Sáb 10-oct", "h": "3:00 PM", "s": "Estadio ULM", "l": "Lobos ULM", "v": "Cardinals UIW", "pl": 20, "pv": 7},
+        {"f": "Sáb 10-oct", "h": "4:00 PM", "s": "Alvizo Porras", "l": "Correcaminos UAT", "v": "Red Wolves QRO", "pl": 7, "pv": 24},
+        {"f": "Sáb 10-oct", "h": "4:00 PM", "s": "Campo de los Sueños", "l": "Halcones UV", "v": "Búhos IPN", "pl": 8, "pv": 27}
+      ],
+      "bye": "Frailes Tepeyac, Águilas UACH (forfeit)",
+      "ff": "Águilas UACH"
+    },
+    {
+      "w": 7,
+      "g": [
+        {"f": "Vie 16-oct", "h": "7:00 PM", "s": "JJ Pichardo", "l": "Potros Salvajes UAEM", "v": "Cimarrones UABC", "pl": 48, "pv": 6},
+        {"f": "Sáb 17-oct", "h": "11:00 AM", "s": "Olimpo Naranja", "l": "Leones Anáhuac QRO", "v": "Correcaminos UAT", "pl": 58, "pv": 0},
+        {"f": "Sáb 17-oct", "h": "12:00 PM", "s": "23 de octubre", "l": "Tecos UAG", "v": "Cardinals UIW", "pl": 57, "pv": 0},
+        {"f": "Sáb 17-oct", "h": "12:00 PM", "s": "La Fortaleza", "l": "Panteras S21", "v": "Indios UACJ", "pl": 7, "pv": 17},
+        {"f": "Sáb 17-oct", "h": "12:00 PM", "s": "FES Acatlán", "l": "Pumas Acatlán", "v": "Águilas UACH", "pl": 9, "pv": 21},
+        {"f": "Sáb 17-oct", "h": "12:00 PM", "s": "Jaime Labastida", "l": "Frailes Tepeyac", "v": "Lobos UAdeC", "pl": 7, "pv": 17},
+        {"f": "Sáb 17-oct", "h": "3:00 PM", "s": "Estadio ULM", "l": "Lobos ULM", "v": "Red Wolves QRO", "pl": 7, "pv": 0},
+        {"f": "Sáb 17-oct", "h": "3:00 PM", "s": "Wilfrido Massieu", "l": "Búhos IPN", "v": "Potros ITSON", "pl": 30, "pv": 32}
+      ],
+      "bye": "Halcones UV, Toros Chapingo",
+      "ff": "Halcones UV"
+    },
+    {
+      "w": 8,
+      "g": [
+        {"f": "Vie 23-oct", "h": "3:00 PM", "s": "Olimpo Naranja", "l": "Leones Anáhuac QRO", "v": "Búhos IPN", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "11:00 AM", "s": "Red Cave", "l": "Red Wolves QRO", "v": "Potros Salvajes UAEM", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "12:00 PM", "s": "El Nido", "l": "Cardinals UIW", "v": "Frailes Tepeyac", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "3:00 PM", "s": "ULM", "l": "Lobos ULM", "v": "Halcones UV", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "4:00 PM", "s": "Alvizo Porras", "l": "Correcaminos UAT", "v": "Pumas Acatlán", "pl": null, "pv": null},
+        {"f": "Sáb 24-oct", "h": "6:00 PM", "s": "23 de Octubre", "l": "Tecos UAG", "v": "Toros Salvajes UACh", "pl": null, "pv": null}
+      ],
+      "bye": "Grupo Norte, Panteras S21",
+      "ff": ""
+    },
+    {
+      "w": 9,
+      "g": [
+        {"f": "Vie 30-oct", "h": "6:00 PM", "s": "Olímpico UACH", "l": "Águilas UACH", "v": "Potros ITSON", "pl": null, "pv": null},
+        {"f": "Vie 30-oct", "h": "6:00 PM", "s": "UACJ", "l": "Indios UACJ", "v": "Lobos UAdeC", "pl": null, "pv": null},
+        {"f": "Sáb 31-oct", "h": "12:00 PM", "s": "Palomo Ruiz Tapia", "l": "Toros Salvajes UACh", "v": "Potros Salvajes UAEM", "pl": null, "pv": null},
+        {"f": "Sáb 31-oct", "h": "12:00 PM", "s": "La Fortaleza", "l": "Panteras S21", "v": "Cimarrones UABC", "pl": null, "pv": null},
+        {"f": "Sáb 31-oct", "h": "3:00 PM", "s": "Wilfrido Massieu", "l": "Búhos IPN", "v": "Frailes Tepeyac", "pl": null, "pv": null},
+        {"f": "Sáb 31-oct", "h": "4:00 PM", "s": "Campo de los Sueños", "l": "Halcones UV", "v": "Pumas Acatlán", "pl": null, "pv": null}
+      ],
+      "bye": "Grupo Bajío, Correcaminos UAT",
+      "ff": ""
+    }
+  ],
+  "proximas": {
+    "grandes": {
+      "w6": {
+        "games": [
+          {"local": "Borregos CCM", "visitante": "Burros Blancos IPN", "fecha": "Vie 9-oct", "hora": "6:00 PM", "estadio": "Disney CCM"},
+          {"local": "Linces UVM", "visitante": "Pumas CU", "fecha": "Vie 9-oct", "hora": "7:00 PM", "estadio": "JOM"},
+          {"local": "Borregos CEM", "visitante": "Aztecas UDLAP", "fecha": "Vie 9-oct", "hora": "7:00 PM", "estadio": "Corral de Plástico"},
+          {"local": "Borregos Monterrey", "visitante": "Zorros CETYS", "fecha": "Vie 9-oct", "hora": "7:30 PM", "estadio": "Borregos"},
+          {"local": "Águilas Blancas IPN", "visitante": "Leones Anáhuac MEX", "fecha": "Sáb 10-oct", "hora": "12:00 PM", "estadio": "Wilfrido Massieu"},
+          {"local": "Borregos Puebla", "visitante": "Auténticos Tigres UANL", "fecha": "Sáb 10-oct", "hora": "1:00 PM", "estadio": "Cráter Azul"},
+          {"local": "Leones Anáhuac Cancún", "visitante": "Borregos Guadalajara", "fecha": "Sáb 10-oct", "hora": "7:00 PM", "estadio": "Coliseo Maya"}
+        ],
+        "bye": ""
+      },
+      "w7": {
+        "games": [
+          {"local": "Zorros CETYS", "visitante": "Borregos CCM", "fecha": "Vie 16-oct", "hora": "7:00 PM", "estadio": "La Madriguera"},
+          {"local": "Borregos CEM", "visitante": "Linces UVM", "fecha": "Vie 16-oct", "hora": "7:00 PM", "estadio": "Corral de Plástico"},
+          {"local": "Auténticos Tigres UANL", "visitante": "Leones Anáhuac MEX", "fecha": "Vie 16-oct", "hora": "7:00 PM", "estadio": "Gaspar Mass"},
+          {"local": "Burros Blancos IPN", "visitante": "Borregos Monterrey", "fecha": "Sáb 17-oct", "hora": "12:00 PM", "estadio": "Wilfrido Massieu"},
+          {"local": "Leones Anáhuac Cancún", "visitante": "Borregos Puebla", "fecha": "Sáb 17-oct", "hora": "7:00 PM", "estadio": "Coliseo Maya"},
+          {"local": "Pumas CU", "visitante": "Águilas Blancas IPN", "fecha": "Sáb 17-oct", "hora": "Por definir", "estadio": "EOU"}
+        ],
+        "bye": "Aztecas UDLAP, Borregos GDL"
+      },
+      "w8": {
+        "games": [
+          {"local": "Borregos Guadalajara", "visitante": "Borregos CEM", "fecha": "Vie 23-oct", "hora": "6:00 PM", "estadio": "La Fortaleza"},
+          {"local": "Leones Anáhuac MEX", "visitante": "Linces UVM", "fecha": "Vie 23-oct", "hora": "6:00 PM", "estadio": "Cueva del León"},
+          {"local": "Zorros CETYS", "visitante": "Auténticos Tigres UANL", "fecha": "Vie 23-oct", "hora": "7:00 PM", "estadio": "La Madriguera"},
+          {"local": "Borregos Monterrey", "visitante": "Leones Anáhuac Cancún", "fecha": "Vie 23-oct", "hora": "7:30 PM", "estadio": "Borregos"},
+          {"local": "Águilas Blancas IPN", "visitante": "Burros Blancos IPN", "fecha": "Sáb 24-oct", "hora": "12:00 PM", "estadio": "Wilfrido Massieu"},
+          {"local": "Aztecas UDLAP", "visitante": "Pumas CU", "fecha": "Sáb 24-oct", "hora": "12:00 PM", "estadio": "Templo del Dolor"}
+        ],
+        "bye": "Borregos CCM, Borregos PUE"
+      },
+      "w9": {
+        "games": [
+          {"local": "Borregos CCM", "visitante": "Linces UVM", "fecha": "Vie 30-oct", "hora": "6:00 PM", "estadio": "Disney CCM"},
+          {"local": "Borregos CEM", "visitante": "Zorros CETYS", "fecha": "Vie 30-oct", "hora": "6:00 PM", "estadio": "Corral de Plástico"},
+          {"local": "Pumas CU", "visitante": "Leones Anáhuac Cancún", "fecha": "Vie 30-oct", "hora": "7:00 PM", "estadio": "EOU 68"},
+          {"local": "Auténticos Tigres UANL", "visitante": "Borregos Guadalajara", "fecha": "Vie 30-oct", "hora": "7:00 PM", "estadio": "Gaspar Mass"},
+          {"local": "Borregos Monterrey", "visitante": "Aztecas UDLAP", "fecha": "Vie 30-oct", "hora": "7:30 PM", "estadio": "Borregos"},
+          {"local": "Borregos Puebla", "visitante": "Águilas Blancas IPN", "fecha": "Sáb 31-oct", "hora": "1:00 PM", "estadio": "Cráter Azul"}
+        ],
+        "bye": "Burros Blancos IPN, Leones Anáhuac MX"
+      },
+      "w10": {
+        "games": [
+          {"local": "Auténticos Tigres UANL", "visitante": "Borregos Monterrey", "fecha": "Mar 3-nov", "hora": "7:00 PM", "estadio": "Gaspar Mass", "tag": "Reprogramado de la semana 5"},
+          {"local": "Borregos Guadalajara", "visitante": "Borregos CCM", "fecha": "Vie 6-nov", "hora": "6:00 PM", "estadio": "La Fortaleza"},
+          {"local": "Leones Anáhuac MEX", "visitante": "Zorros CETYS", "fecha": "Vie 6-nov", "hora": "6:00 PM", "estadio": "Cueva del León"},
+          {"local": "Aztecas UDLAP", "visitante": "Borregos Puebla", "fecha": "Sáb 7-nov", "hora": "12:00 PM", "estadio": "Templo del Dolor"},
+          {"local": "Linces UVM", "visitante": "Auténticos Tigres UANL", "fecha": "Sáb 7-nov", "hora": "12:00 PM", "estadio": "JOM"},
+          {"local": "Águilas Blancas IPN", "visitante": "Borregos Monterrey", "fecha": "Sáb 7-nov", "hora": "12:00 PM", "estadio": "Wilfrido Massieu"},
+          {"local": "Burros Blancos IPN", "visitante": "Leones Anáhuac Cancún", "fecha": "Sáb 7-nov", "hora": "3:00 PM", "estadio": "Wilfrido Massieu"}
+        ],
+        "bye": "Borregos CEM, Pumas CU"
+      }
+    }
+  }
+}
