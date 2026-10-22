@@ -124,7 +124,7 @@ Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 
 
 ## Versión de archivos (caché)
 
-Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022`).
+Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022b`).
 Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese número por uno nuevo (por ejemplo `20261029`) en:
 
 - `js/cargar.js` → `const VERSION='…'`
@@ -133,3 +133,9 @@ Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese 
 
 Los datos (`data/*.json`) no necesitan versión: siempre se descargan frescos.
 Si después de subir algo sigues viendo la versión anterior en Hostinger, en hPanel ve a **Rendimiento → CDN / Caché** y da clic en **Purgar caché**.
+
+## Compartir en X e historia de Instagram
+
+`js/base/19-compartir-redes.js` agrega los botones **Post en X** e **Historia IG** a un recuadro. Hoy están en el cuadro amarillo de la semana 7 (Alvarado y Chaib), configurado en `js/spotlight/17-semana7-redes-destacado.js`; para otra nota, copia ese archivo y cambia título, texto, imágenes y enlace.
+- **X:** abre la ventana para publicar con el texto y el enlace `https://yardaxyarda.com/#semana-7/grandes/destacado`.
+- **Historia IG:** crea una imagen vertical 1080×1920 con las fotos y el título, copia el enlace (para el sticker de enlace) y abre el menú de compartir del celular → Instagram → Historia. En computadora descarga la imagen.

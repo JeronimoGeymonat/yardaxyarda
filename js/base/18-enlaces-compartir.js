@@ -23,7 +23,7 @@
  let applying=false,lastHash=''; /* último enlace aplicado o escrito por la página */
  function go(view,target,quiet){
   const off=matchMedia('(max-width:1100px)').matches?78:16;
-  const el=target||(view==='team-stats'?tableSection():view==='insights'?$('team-subnav'):CARDS[view]?card(CARDS[view]):$('heading'));
+  const el=target||(view==='destacado'?document.querySelector('.aside-card.insight'):view==='team-stats'?tableSection():view==='insights'?$('team-subnav'):CARDS[view]?card(CARDS[view]):$('heading'));
   if(!el)return;
   const y=el.getBoundingClientRect().top+scrollY-off;
   document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,Math.max(0,y));document.documentElement.style.scrollBehavior='';

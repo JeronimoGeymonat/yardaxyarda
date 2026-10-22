@@ -400,3 +400,11 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .yxy-note-view{position:fixed;inset:0;z-index:2147483000;background:#101010;display:none;flex-direction:column}
 .yxy-note-view.yxy-open{display:flex}
 .yxy-note-frame{width:100%;height:100%;flex:1;border:0;background:#101010}
+/* Compartir en redes (X / historia de Instagram) dentro del cuadro amarillo */
+.yxy-redes{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px;padding-top:14px;border-top:1px solid #0a070055}
+.yxy-redes-lbl{font:bold 11px 'Courier New',ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase;color:#0a0700;margin-right:4px}
+.yxy-red{display:inline-flex;align-items:center;gap:8px;background:#0a0700;color:#ffb000;border:1px solid #0a0700;padding:9px 12px;font:bold 12px 'Courier New',ui-monospace,monospace;letter-spacing:1px;text-transform:uppercase;cursor:pointer}
+.yxy-red svg{width:18px;height:18px;flex:none}
+.yxy-red:hover,.yxy-red:focus-visible{background:#2a1c00}
+.yxy-red.ig{background:linear-gradient(135deg,#0a0700,#0a0700)}
+@media(max-width:1100px){.yxy-redes-lbl{width:100%}.yxy-red{flex:1;justify-content:center}}
