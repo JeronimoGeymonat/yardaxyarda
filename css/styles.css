@@ -391,3 +391,12 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .yxy-flinks a{font:bold 11px 'Courier New',ui-monospace,monospace;letter-spacing:1.5px;text-transform:uppercase;color:#0c0905;text-decoration:underline;text-underline-offset:3px}
 #yxy-cookies p a{color:#ffb000;font-weight:bold;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 .yxy-footer{flex-wrap:wrap}
+/* Semana 8 · portada "Guerra Civil": abre la nota previa */
+#hero8{cursor:pointer}
+#hero8:focus-visible{outline:3px solid #ffb000;outline-offset:5px}
+#hero8:hover .hero8-cap h2{text-decoration:underline;text-underline-offset:6px}
+.hero8-leer{display:inline-block;align-self:flex-start;margin-top:18px;background:#ffb000;color:#0a0700;font:bold 12px 'Courier New',ui-monospace,monospace;letter-spacing:1.5px;text-transform:uppercase;padding:9px 14px}
+#hero8:hover .hero8-leer{background:#ffcf66}
+.yxy-note-view{position:fixed;inset:0;z-index:2147483000;background:#101010;display:none;flex-direction:column}
+.yxy-note-view.yxy-open{display:flex}
+.yxy-note-frame{width:100%;height:100%;flex:1;border:0;background:#101010}

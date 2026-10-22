@@ -72,6 +72,7 @@
    "js/spotlight/13-semana7-player-stats-videos.js",
    "js/insights/08-castigos-s7.js",
    "js/semanas/14-portada-s8.js",
+   "js/semanas/15-nota-guerra-civil.js",
    "js/spotlight/14-semana3-publicidad.js",
    "js/spotlight/15-semana7-team-stats-publicidad.js",
    "js/spotlight/16-semana4-player-stats-publicidad.js",
