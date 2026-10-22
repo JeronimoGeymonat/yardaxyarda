@@ -54,19 +54,25 @@ window.yxyRedes=function(box,cfgIn){
   ctx.textAlign='left';ctx.fillStyle='#ffb000';ctx.font='bold 46px '+F;ctx.fillText('YARDA×YARDA.',196,142);
   ctx.fillStyle='#d99400';ctx.font='bold 28px '+F;ctx.fillText((cfg.etiqueta||'IN THE SPOTLIGHT').toUpperCase(),96,236);
   if(cfg.lideres){
-   const L=cfg.lideres;ctx.fillStyle='#ffb000';ctx.font='bold 76px '+F;ctx.fillText(cfg.titulo.toUpperCase(),96,350);
-   ctx.fillStyle='#efe6cf';ctx.font='bold 30px '+F;ctx.fillText(L.sub||'',96,404);
-   ctx.textAlign='right';ctx.fillStyle='#d99400';ctx.font='bold 24px '+F;ctx.fillText((L.metrica||'').toUpperCase(),W-96,404);ctx.textAlign='left';
-   const rows=L.filas.slice(0,5),top0=450,rh=228;
-   rows.forEach((r,i)=>{const y0=top0+i*rh,lead=i===0;
-    ctx.fillStyle=lead?'#2a1c00':(i%2?'#120d00':'#1a1300');ctx.fillRect(96,y0,W-192,rh-14);
-    ctx.fillStyle='#ffb000';ctx.fillRect(96,y0,lead?12:6,rh-14);
-    ctx.textAlign='center';ctx.fillStyle=lead?'#ffb000':'#d99400';ctx.font='bold '+(lead?72:58)+'px '+F;ctx.fillText(String(r.rank),170,y0+(rh-14)/2+22);
-    ctx.textAlign='left';let nm=r.name;ctx.font='bold '+(lead?46:40)+'px '+F;while(ctx.measureText(nm).width>W-192-420&&nm.length>4)nm=nm.slice(0,-2)+'…';
-    ctx.fillStyle='#ffffff';ctx.fillText(nm,240,y0+78);
-    ctx.fillStyle='#d99400';ctx.font='28px '+F;ctx.fillText(r.team||'',240,y0+122);
-    if(r.extra){ctx.fillStyle='#a07a20';ctx.font='24px '+F;let ex=r.extra;while(ctx.measureText(ex).width>W-192-420&&ex.length>4)ex=ex.slice(0,-2)+'…';ctx.fillText(ex,240,y0+162)}
-    ctx.textAlign='right';ctx.fillStyle=lead?'#ffb000':'#ffcf66';ctx.font='bold '+(lead?84:62)+'px '+F;ctx.fillText(r.value,W-128,y0+(rh-14)/2+26);ctx.textAlign='left'});
+   const L=cfg.lideres,foto=L.foto?await load(L.foto).catch(()=>null):null;
+   /* con foto: imagen arriba y tabla compacta abajo; sin foto: tabla grande */
+   const g=foto?{t:912,s:956,top0:982,rh:134,n1:44,n:38,v1:62,v:52,rk1:56,rk:46,tm:24,ex:20,ny:48,ty:82,ey:110}
+               :{t:350,s:404,top0:450,rh:228,n1:46,n:40,v1:84,v:62,rk1:72,rk:58,tm:28,ex:24,ny:78,ty:122,ey:162};
+   if(foto){const fy=262,fh=580;cover(ctx,foto,96,fy,W-192,fh);ctx.strokeStyle='#ffb000';ctx.lineWidth=4;ctx.strokeRect(96,fy,W-192,fh)}
+   ctx.fillStyle='#ffb000';{let fz=foto?66:76;do{ctx.font='bold '+fz+'px '+F;fz-=2}while(ctx.measureText(cfg.titulo.toUpperCase()).width>W-192&&fz>36)}ctx.fillText(cfg.titulo.toUpperCase(),96,g.t);
+   ctx.fillStyle='#efe6cf';ctx.font='bold 30px '+F;ctx.fillText(L.sub||'',96,g.s);
+   ctx.textAlign='right';ctx.fillStyle='#d99400';ctx.font='bold 24px '+F;ctx.fillText((L.metrica||'').toUpperCase(),W-96,g.s);ctx.textAlign='left';
+   const rows=L.filas.slice(0,5),top0=g.top0,rh=g.rh;
+   rows.forEach((r,i)=>{const y0=top0+i*rh,lead=i===0,h=rh-12;
+    ctx.fillStyle=lead?'#2a1c00':(i%2?'#120d00':'#1a1300');ctx.fillRect(96,y0,W-192,h);
+    ctx.fillStyle='#ffb000';ctx.fillRect(96,y0,lead?12:6,h);
+    ctx.textAlign='center';ctx.fillStyle=lead?'#ffb000':'#d99400';ctx.font='bold '+(lead?g.rk1:g.rk)+'px '+F;ctx.fillText(String(r.rank),170,y0+h/2+g.rk/2.6);
+    ctx.textAlign='left';let nm=r.name;ctx.font='bold '+(lead?g.n1:g.n)+'px '+F;while(ctx.measureText(nm).width>W-192-420&&nm.length>4)nm=nm.slice(0,-2)+'…';
+    const off=foto&&!r.extra?10:0;
+    ctx.fillStyle='#ffffff';ctx.fillText(nm,240,y0+g.ny+off);
+    ctx.fillStyle='#d99400';ctx.font=g.tm+'px '+F;ctx.fillText(r.team||'',240,y0+g.ty+off);
+    if(r.extra){ctx.fillStyle='#a07a20';ctx.font=g.ex+'px '+F;let ex=r.extra;while(ctx.measureText(ex).width>W-192-420&&ex.length>4)ex=ex.slice(0,-2)+'…';ctx.fillText(ex,240,y0+g.ey)}
+    ctx.textAlign='right';ctx.fillStyle=lead?'#ffb000':'#ffcf66';ctx.font='bold '+(lead?g.v1:g.v)+'px '+F;ctx.fillText(r.value,W-128,y0+h/2+g.v/2.8);ctx.textAlign='left'});
   }else if(cfg.partidos){
    ctx.fillStyle='#ffb000';ctx.font='bold 60px '+F;let ty=330;wrap(ctx,cfg.titulo,W-192).slice(0,2).forEach(l=>{ctx.fillText(l,96,ty);ty+=70});
    const ps=cfg.partidos,top0=ty+10,avail=H-300-top0-(cfg.nota?50:0),rh=Math.min(176,Math.floor(avail/Math.max(1,ps.length))),fs=Math.min(38,Math.floor(rh*.24));

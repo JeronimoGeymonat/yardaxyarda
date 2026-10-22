@@ -18,7 +18,8 @@
    if(!bar&&on){const host=card.querySelector('.card-content')||card;
     bar=yxyRedes(host,()=>{const w=$('season').value,n=w.slice(1),dv=division,f=filas(card),metric=card.querySelector('.card-title .stat-unit')?.textContent.trim()||'';
      const nombre=NOMBRE[ttl]||ttl;
-     return {compacto:true,titulo:ttl,lideres:{sub:'Semana '+n+' · '+DIV[dv],metrica:metric,filas:f},etiqueta:'ONEFA · Liga Mayor 2026',
+     const foto=card.querySelector('.card-photo img')?.getAttribute('src')||'';
+     return {compacto:true,titulo:ttl,lideres:{sub:'Semana '+n+' · '+DIV[dv],metrica:metric,filas:f,foto},etiqueta:'ONEFA · Liga Mayor 2026',
       texto:'🏈 '+nombre+' · Semana '+n+' · '+DIV[dv]+' (ONEFA)\n'+f.map(r=>r.rank+'. '+r.name+' ('+r.team+') '+r.value).join('\n')+'\n#ONEFA '+TAG[dv],
       hash:'#semana-'+n+'/'+dv+'/'+slug,pie:'Todos los líderes en yardaxyarda.com',archivo:'yardaxyarda-'+slug+'-s'+n+'-'+dv}})}
    if(bar)bar.hidden=!on;
