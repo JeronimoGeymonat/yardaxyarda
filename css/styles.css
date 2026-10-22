@@ -431,3 +431,7 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .card .yxy-redes.compacto .yxy-red:hover{background:#ffb000;color:#0a0700}
 .card .yxy-redes.compacto .yxy-red svg{width:15px;height:15px}
 @media(max-width:700px){.card .yxy-redes.compacto .yxy-red span{display:inline}.card .yxy-redes.compacto .yxy-redes-lbl{width:auto}}
+/* Tarjetas de líderes: solo íconos de X e Instagram */
+.card .yxy-redes.compacto .yxy-red span{display:none!important}
+.card .yxy-redes.compacto .yxy-red{width:34px;height:34px;padding:0;justify-content:center}
+.card .yxy-redes.compacto .yxy-red svg{width:17px;height:17px}
