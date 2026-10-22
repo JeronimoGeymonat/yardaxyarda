@@ -96,23 +96,33 @@ https://yardaxyarda.com/#semana-7/nacional/player-stats
 
 ## Analítica (Google Analytics 4 · `G-KNM0MF1JTT`)
 
-- La etiqueta de Google (gtag.js, ID `G-KNM0MF1JTT`) está en el `<head>` de `index.html`. Justo antes se carga `js/base/00-consentimiento.js`, que respeta si el visitante rechazó las cookies.
-- `js/base/15-analitica-eventos.js` envía los eventos de clic y muestra el aviso de cookies la primera vez.
+- La etiqueta de Google está en el `<head>` de `index.html`, `privacidad.html` y `notas/*.html`. Antes se carga `js/base/00-consentimiento.js` (respeta "Rechazar" del aviso de cookies; publicidad de Google desactivada).
+- Vistas de página: GA4 cuenta cada cambio de sección (la dirección cambia a `#semana-7/grandes/team-stats`, `#equipo-pumas-cu`…) y cada vista lleva su propio título, p. ej. "Semana 7 · 14 Grandes · Team stats · Yarda × Yarda".
+- Enlaces compartidos llevan UTM (`utm_source=x`, `instagram` o `compartir`, `utm_medium=social`, `utm_campaign=yardaxyarda`) para saber de qué red llega cada visita.
+- Eventos: `js/base/15-analitica-eventos.js`, `js/base/20-analitica-avanzada.js` y el script al final de cada nota.
 
-| Evento | Cuándo | Parámetro principal |
+| Evento | Cuándo | Parámetros |
 |---|---|---|
-| `semana_cambio` | elige una semana | `semana` |
+| `enlace_entrada` | llega con un enlace a una sección o con UTM | `destino`, `fuente` |
+| `semana_cambio` | elige una semana (selector o barra) | `semana`, `origen` |
 | `conferencia_cambio` | 14 GRANDES / NACIONAL | `conferencia` |
 | `pestana_cambio` | Overview / Player stats / Team stats | `pestana` |
 | `team_stats_vista` | Tabla general / Insights | `vista` |
-| `equipo_ver` (+ `page_view`) | abre la página de un equipo | `equipo` |
-| `cronica_abrir` | abre la crónica | `titulo` |
-| `video_reproducir` / `video_sonido` | le da play / activa el sonido | `video` |
-| `credito_clic` | clic a un crédito de Instagram u otro enlace externo | `cuenta`, `url` |
-| `menu_clic` | clic en el menú lateral | `opcion` |
-| `compartir` | botón Compartir | `destino`, `titulo` |
+| `seccion_vista` | ve Resultados, Calendario, Tabla, Castigos, etc. | `seccion` |
+| `lideres_ver_todos` | abre la lista completa de una categoría | `categoria` |
+| `tabla_ordenar` | ordena una tabla | `tabla`, `columna` |
+| `busqueda` / `filtro_cambio` | busca o filtra | `termino` / `filtro`, `valor` |
+| `equipo_ver` | abre la página de un equipo | `equipo`, `conferencia` |
+| `cronica_abrir` | abre una nota desde el sitio | `titulo` |
+| `nota_abierta` · `nota_lectura` · `nota_leida` · `nota_tiempo` | lectura de una nota (25/50/75/100 %, segundos) | `nota`, `porcentaje`, `segundos`, `abierta_desde` |
+| `compartir` | botón Compartir, X o historia IG | `destino`, `titulo`, `red` |
+| `publicidad_impresion` / `publicidad_clic` | un anuncio se ve / recibe clic | `anunciante`, `ubicacion`, `post` |
+| `video_reproducir` / `video_sonido` | play / activa el sonido | `video` |
+| `credito_clic` | clic a un crédito de fotógrafo u otro enlace externo | `cuenta`, `url` |
+| `menu_clic` | menú lateral | `opcion` |
+| `consentimiento` | acepta / rechaza cookies | `decision` |
 
-Todos llevan además `semana_actual` y `conferencia_actual`. Para usar los parámetros en los reportes, regístralos en GA4 → Administrar → Definiciones personalizadas.
+Todos llevan además `semana_actual` y `conferencia_actual`. Para verlos en informes, regístralos en GA4 → Administrar → Definiciones personalizadas (ámbito: evento).
 
 ## Aviso de privacidad
 
@@ -124,7 +134,7 @@ Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 
 
 ## Versión de archivos (caché)
 
-Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022d`).
+Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022g`).
 Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese número por uno nuevo (por ejemplo `20261029`) en:
 
 - `js/cargar.js` → `const VERSION='…'`

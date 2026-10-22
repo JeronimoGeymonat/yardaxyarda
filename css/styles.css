@@ -413,3 +413,10 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .weekly-results .yxy-redes-lbl,.calendar .yxy-redes-lbl{color:#ffb000}
 .weekly-results .yxy-red,.calendar .yxy-red{border-color:#ffb000}
 .yxy-redes[hidden]{display:none}
+/* Semana 5 · Overview · cuadro amarillo: video de publicidad */
+.spot-w5ad{display:none}
+.aside-card.insight.w5admode .spot-w5ad{display:block}
+.aside-card.insight.w5admode>*:not(.eyebrow):not(.spot-w5ad){display:none!important}
+.spot-w5ad .w3ad-tag{display:inline-block;margin-top:14px}
+.spot-w5ad video{display:block;width:100%;height:auto;margin:10px 0 4px;border:1px solid #0a0700;background:#000}
+.spot-w5ad .w3ad{margin-top:12px}
