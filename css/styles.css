@@ -424,3 +424,10 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .yxy-beta{margin:16px 0 0;padding:10px 12px;border:1px dashed #3a2a00;font-size:10px;line-height:1.6;color:#a07a20;letter-spacing:.2px}
 .yxy-beta b{color:#d99400}
 .yxy-beta a{color:#ffb000}
+/* Barra compacta de redes en las tarjetas de líderes */
+.card .yxy-redes.compacto{margin:0;padding:10px 16px 12px;border-top:1px solid #3a2a00;gap:6px}
+.card .yxy-redes.compacto .yxy-redes-lbl{color:#d99400;font-size:10px;width:auto;margin-right:auto}
+.card .yxy-redes.compacto .yxy-red{flex:none;padding:6px 9px;font-size:10px;background:transparent;color:#ffb000;border-color:#ffb000}
+.card .yxy-redes.compacto .yxy-red:hover{background:#ffb000;color:#0a0700}
+.card .yxy-redes.compacto .yxy-red svg{width:15px;height:15px}
+@media(max-width:700px){.card .yxy-redes.compacto .yxy-red span{display:inline}.card .yxy-redes.compacto .yxy-redes-lbl{width:auto}}

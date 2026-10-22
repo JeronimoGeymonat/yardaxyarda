@@ -134,7 +134,7 @@ Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 
 
 ## Versión de archivos (caché)
 
-Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022h`).
+Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022i`).
 Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese número por uno nuevo (por ejemplo `20261029`) en:
 
 - `js/cargar.js` → `const VERSION='…'`
@@ -151,3 +151,5 @@ Si después de subir algo sigues viendo la versión anterior en Hostinger, en hP
 - **Historia IG:** crea una imagen vertical 1080×1920 con las fotos y el título, copia el enlace (para el sticker de enlace) y abre el menú de compartir del celular → Instagram → Historia. En computadora descarga la imagen.
 - También están en **Resultados de la semana 7**, **Calendario de la semana 8** (14 Grandes y Nacional, en `js/semanas/16-redes-resultados-calendario.js`) y al final de la **nota de la Guerra Civil** (`notas/previa-guerra-civil.html`). En resultados y calendario la imagen de la historia se arma con los marcadores u horarios.
 - Enlaces: `#semana-7/grandes/resultados`, `#semana-8/nacional/calendario`, `notas/previa-guerra-civil.html`.
+- **Top 5 por posición** (Top QBs, RBs, WRs, Tackleador, Yds Mezcladas) en las semanas 4–7, 14 Grandes y Nacional: cada tarjeta tiene **Post en X** (con el top 5 en el texto) e **Historia IG**, que crea la imagen de la tabla (`js/spotlight/19-top5-redes.js`). Para agregar una semana, súmala a `SEMANAS`.
+- Antes de compartir en Instagram se muestra una **vista previa** de la imagen con los botones "Compartir en Instagram" y "Descargar imagen".
