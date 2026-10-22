@@ -126,7 +126,7 @@ Todos llevan además `semana_actual` y `conferencia_actual`. Para verlos en info
 
 ## Aviso de privacidad
 
-`privacidad.html` es una página independiente con el aviso de privacidad (datos de navegación, Google Analytics, publicidad, derechos ARCO) y botones para que el visitante acepte o rechace la medición. El correo de contacto es `contacto@yardaxyarda.com`: créalo en Hostinger (Correos electrónicos) o cámbialo en el archivo.
+`privacidad.html` es una página independiente con el aviso de privacidad (datos de navegación, Google Analytics, publicidad, derechos ARCO) y botones para que el visitante acepte o rechace la medición. El correo de contacto es `clientes@yardaxyarda.com`: créalo en Hostinger (Correos electrónicos) o cámbialo en el archivo.
 
 ## Rankings
 
@@ -134,7 +134,7 @@ Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 
 
 ## Versión de archivos (caché)
 
-Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022g`).
+Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022h`).
 Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese número por uno nuevo (por ejemplo `20261029`) en:
 
 - `js/cargar.js` → `const VERSION='…'`

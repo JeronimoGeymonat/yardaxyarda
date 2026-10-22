@@ -420,3 +420,7 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .spot-w5ad .w3ad-tag{display:inline-block;margin-top:14px}
 .spot-w5ad video{display:block;width:100%;height:auto;margin:10px 0 4px;border:1px solid #0a0700;background:#000}
 .spot-w5ad .w3ad{margin-top:12px}
+/* Aviso de Fase Beta (pequeño) */
+.yxy-beta{margin:16px 0 0;padding:10px 12px;border:1px dashed #3a2a00;font-size:10px;line-height:1.6;color:#a07a20;letter-spacing:.2px}
+.yxy-beta b{color:#d99400}
+.yxy-beta a{color:#ffb000}
