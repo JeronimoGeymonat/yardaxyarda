@@ -11,7 +11,8 @@
  const CARDS={'top-qbs':'Top QBs','top-rbs':'Top RBs','top-wrs':'Top WRs','tackleador':'Lider Tackleador','yds-mezcladas':'Lider Yds Mezcladas'};
  const DIV={grandes:'14 Grandes',nacional:'Nacional'};
  const VISTA={'overview':'Overview','player-stats':'Player stats','team-stats':'Tabla general','insights':'Insights'};
- const base=()=>location.href.split('#')[0];
+ const SITIO='https://yardaxyarda.com/'; /* los enlaces de Compartir siempre usan el dominio oficial */
+ const base=()=>SITIO;
  const linkFor=(wk,dv,view)=>base()+'#semana-'+String(wk).replace(/^w/,'')+'/'+dv+(view?'/'+view:'');
  const visible=el=>el&&!el.hidden&&el.offsetParent!==null;
  const currentView=()=>tab==='players'?'player-stats':tab==='teams'?(teamSub==='insights'?'insights':'team-stats'):'overview';
@@ -19,7 +20,7 @@
  const tableSection=()=>['st4','standings'].map(id=>$(id)).find(visible);
 
  /* ---------- ir a un enlace ---------- */
- let applying=false;
+ let applying=false,lastHash=''; /* último enlace aplicado o escrito por la página */
  function go(view,target,quiet){
   const off=matchMedia('(max-width:1100px)').matches?78:16;
   const el=target||(view==='team-stats'?tableSection():view==='insights'?$('team-subnav'):CARDS[view]?card(CARDS[view]):$('heading'));
@@ -32,7 +33,7 @@
  function apply(hash,scroll){
   const m=(hash||'').match(RE);if(!m)return false;
   const wk='w'+m[1],dv=m[2],view=m[3]||'overview',sel=$('season');
-  applying=true;
+  applying=true;lastHash=hash;
   if(division!==dv)document.querySelector(`[data-division="${dv}"]`)?.click();
   if([...sel.options].some(o=>o.value===wk)&&sel.value!==wk){sel.value=wk;sel.dispatchEvent(new Event('change',{bubbles:true}))}
   const wantTab=view==='player-stats'?'players':(view==='team-stats'||view==='insights')?'teams':'overview';
@@ -56,8 +57,9 @@
  function syncUrl(){
   if(applying||currentTeam||!touched)return;
   if(location.hash&&!RE.test(location.hash))return; /* no tocar otros enlaces (#equipo-…, #stats-start) */
+  if(location.hash&&location.hash!==lastHash)return; /* llegó un enlace nuevo: lo aplica el evento hashchange */
   const h='#semana-'+$('season').value.replace(/^w/,'')+'/'+division+'/'+currentView();
-  if(location.hash!==h)try{history.replaceState(null,'',h)}catch(e){}
+  if(location.hash!==h)try{history.replaceState(null,'',h);lastHash=h}catch(e){}
  }
 
  /* ---------- botón Compartir ---------- */

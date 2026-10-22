@@ -81,13 +81,17 @@
    "js/base/15-analitica-eventos.js",
    "js/base/18-enlaces-compartir.js"
  ];
+ /* Versión de los archivos: súbela (por ejemplo 20261029) cada vez que actualices código o estilos,
+    así los navegadores y el caché de Hostinger descargan la versión nueva en lugar de la vieja.
+    Cámbiala también en index.html (styles.css, 00-consentimiento.js y cargar.js). */
+ const VERSION='20261022';
  window.YXY={};
  Promise.all(DATOS.map(n=>fetch('data/'+n+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('data/'+n+'.json');return r.json()}).then(j=>{YXY[n]=j})))
   .then(()=>{
    /* la tabla general más reciente (semana con número más alto que tenga "tabla") alimenta la tira de récords y las páginas de equipo */
    const sem=DATOS.filter(n=>/^semana\d+$/.test(n)&&YXY[n].tabla).sort((a,b)=>a.slice(6)-b.slice(6));
    YXY.tablaActual=YXY[sem[sem.length-1]].tabla;
-   SCRIPTS.forEach(src=>{const s=document.createElement('script');s.src=src;s.async=false;document.body.appendChild(s)});
+   SCRIPTS.forEach(src=>{const s=document.createElement('script');s.src=src+'?v='+VERSION;s.async=false;document.body.appendChild(s)});
   })
   .catch(e=>{console.error(e);const p=document.createElement('p');p.style.cssText='position:fixed;left:0;right:0;top:0;z-index:99999;margin:0;padding:12px 16px;background:#ffb000;color:#0a0700;font:bold 13px Arial,sans-serif';
    p.textContent='No se pudieron cargar los datos ('+e.message+'). Abre el sitio desde GitHub Pages o con un servidor local (ver README).';document.body.appendChild(p)});

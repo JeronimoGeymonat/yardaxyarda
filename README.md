@@ -121,3 +121,15 @@ Todos llevan además `semana_actual` y `conferencia_actual`. Para usar los pará
 ## Rankings
 
 Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 2, 3, 4, 5…). Si dos jugadores empatan, va primero el que aparece primero en `data/semanaN.json`; para cambiar quién va antes, cambia el orden de las filas en el archivo.
+
+## Versión de archivos (caché)
+
+Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022`).
+Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese número por uno nuevo (por ejemplo `20261029`) en:
+
+- `js/cargar.js` → `const VERSION='…'`
+- `index.html` → `css/styles.css?v=…`, `js/base/00-consentimiento.js?v=…` y `js/cargar.js?v=…`
+- `privacidad.html` → `js/base/00-consentimiento.js?v=…`
+
+Los datos (`data/*.json`) no necesitan versión: siempre se descargan frescos.
+Si después de subir algo sigues viendo la versión anterior en Hostinger, en hPanel ve a **Rendimiento → CDN / Caché** y da clic en **Purgar caché**.
