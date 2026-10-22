@@ -20,6 +20,13 @@ h2{font:900 clamp(20px,2.6vw,26px)/1.15 Arial,Helvetica,sans-serif;letter-spacin
 .photo.portrait{max-width:400px;margin-left:auto;margin-right:auto}
 .photo img{height:auto}
 figcaption a{color:#6d5026}
+.yxy-redes{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:34px 0 0;padding:18px 0 0;border-top:3px solid #14110d}
+.yxy-redes-lbl{font:800 12px 'Courier New',monospace;letter-spacing:.18em;text-transform:uppercase;color:#14110d;margin-right:4px}
+.yxy-red{display:inline-flex;align-items:center;gap:8px;background:#151515;color:#f7b43e;border:2px solid #151515;padding:10px 14px;font:800 12px 'Courier New',monospace;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.yxy-red svg{width:18px;height:18px;flex:none}.yxy-red:hover,.yxy-red:focus-visible{background:#2a1c00}
+@media(max-width:600px){.yxy-redes-lbl{width:100%}.yxy-red{flex:1;justify-content:center}}
+#yxy-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);z-index:9999;background:#f7b43e;color:#111;font:800 13px 'Courier New',monospace;padding:11px 16px;box-shadow:0 6px 20px #000c;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:90vw;text-align:center}
+#yxy-toast.on{opacity:1;transform:translate(-50%,0)}
 .matchup{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font:800 12px/1.5 'Courier New',monospace;letter-spacing:.06em;text-transform:uppercase}
 </style>
 </head>
@@ -44,8 +51,22 @@ figcaption a{color:#6d5026}
 <p>Con los Blancos, Aldo Herrera, como pateador de despeje, es uno de los más eficientes en toda la liga, y Mixel Franco, pateador de lugar, también suele ser garantía gracias a su veteranía y experiencia con el equipo a la hora de ejecutar los puntos extra y los goles de campo.</p>
 <p>Al final, quienes den mejor protección y ejecución a sus equipos especiales podrán acercarse más a la victoria.</p>
 <p>La Guerra Civil no se gana con historia ni con récords: se gana con ejecución. Quien falle en lo básico lo pagará caro, porque al otro lado hay un hermano que sabe exactamente dónde pegar. Cuando termine el sábado, solo uno saldrá del Wilfrido Massieu con la frente en alto y las aspiraciones de postemporada más vivas que nunca.</p>
+<div id="compartir-nota"></div>
 </article></main>
 <footer style="display:flex;justify-content:center;align-items:center;gap:12px;background:#f5f0e5;padding:30px 16px;border-top:1px solid #d7c7a8"><span aria-hidden="true" style="width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;position:relative;background:#101010;color:#ffbf24;font:900 24px Arial,sans-serif"><span style="position:absolute;left:5px;top:5px;font:900 10px monospace;line-height:9px">≡<br>≡<br>≡</span><span style="margin-left:9px">×</span></span><span style="font:900 clamp(17px,4vw,25px) Arial,sans-serif;letter-spacing:3px;color:#101010">YARDA<span style="color:#101010">×</span>YARDA.</span></footer>
+<script src="../js/base/19-compartir-redes.js?v=20261022c"></script>
+<script>
+/* Compartir la nota en X e historia de Instagram */
+yxyRedes(document.getElementById('compartir-nota'),{
+ titulo:'Todo listo para la “Guerra Civil”: El clásico choque entre instituciones del IPN',
+ etiqueta:'Previa · Semana 8 · 14 Grandes',
+ texto:'⚔️ Todo listo para la “Guerra Civil”: Águilas Blancas vs. Burros Blancos, el clásico del IPN. Sábado 24 de octubre, 12:00 p.m., Wilfrido Massieu. Previa por @gabo9702 👇 #ONEFA #14Grandes',
+ resumen:'Águilas Blancas vs. Burros Blancos · Sábado 24 de octubre · 12:00 p.m. · Estadio Wilfrido Massieu.',
+ url:'https://yardaxyarda.com/notas/previa-guerra-civil.html',
+ imagenes:['../assets/images/guerra-civil-aguilas-7.webp','../assets/images/guerra-civil-burros-11.webp'],
+ archivo:'yardaxyarda-previa-guerra-civil'
+});
+</script>
 <script>
 /* Dentro del sitio (ventana emergente) cierra la nota; abierta sola, regresa a la semana 8 */
 document.querySelectorAll('[data-volver]').forEach(function(a){

@@ -81,12 +81,13 @@
    "js/base/15-analitica-eventos.js",
    "js/base/18-enlaces-compartir.js",
    "js/base/19-compartir-redes.js",
-   "js/spotlight/17-semana7-redes-destacado.js"
+   "js/spotlight/17-semana7-redes-destacado.js",
+   "js/semanas/16-redes-resultados-calendario.js"
  ];
  /* Versión de los archivos: súbela (por ejemplo 20261029) cada vez que actualices código o estilos,
     así los navegadores y el caché de Hostinger descargan la versión nueva en lugar de la vieja.
     Cámbiala también en index.html (styles.css, 00-consentimiento.js y cargar.js). */
- const VERSION='20261022b';
+ const VERSION='20261022c';
  window.YXY={};
  Promise.all(DATOS.map(n=>fetch('data/'+n+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('data/'+n+'.json');return r.json()}).then(j=>{YXY[n]=j})))
   .then(()=>{

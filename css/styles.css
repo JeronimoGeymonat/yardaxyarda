@@ -408,3 +408,8 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .yxy-red:hover,.yxy-red:focus-visible{background:#2a1c00}
 .yxy-red.ig{background:linear-gradient(135deg,#0a0700,#0a0700)}
 @media(max-width:1100px){.yxy-redes-lbl{width:100%}.yxy-red{flex:1;justify-content:center}}
+/* Barra de redes fuera del cuadro amarillo (Resultados, Calendario) */
+.weekly-results .yxy-redes,.calendar .yxy-redes{border-top-color:#3a2a00}
+.weekly-results .yxy-redes-lbl,.calendar .yxy-redes-lbl{color:#ffb000}
+.weekly-results .yxy-red,.calendar .yxy-red{border-color:#ffb000}
+.yxy-redes[hidden]{display:none}

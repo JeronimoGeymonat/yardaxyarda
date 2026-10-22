@@ -4,7 +4,7 @@
  card.setAttribute('role','link');card.setAttribute('tabindex','0');card.setAttribute('aria-label','Leer la previa: '+TIT);
  const cap=card.querySelector('.hero8-cap');if(cap&&!cap.querySelector('.hero8-leer'))cap.insertAdjacentHTML('beforeend','<span class="hero8-leer">Leer la previa →</span>');
  const view=document.createElement('div');view.className='yxy-note-view';view.setAttribute('role','dialog');view.setAttribute('aria-modal','true');view.setAttribute('aria-label','Previa de la Guerra Civil');view.setAttribute('aria-hidden','true');
- const frame=document.createElement('iframe');frame.title=TIT;frame.className='yxy-note-frame';view.appendChild(frame);document.body.appendChild(view);
+ const frame=document.createElement('iframe');frame.title=TIT;frame.setAttribute('allow','web-share; clipboard-write');frame.className='yxy-note-frame';view.appendChild(frame);document.body.appendChild(view);
  let prevOverflow='';
  function open(){if(!frame.getAttribute('src'))frame.setAttribute('src',NOTA);
   prevOverflow=document.body.style.overflow;view.classList.add('yxy-open');view.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
