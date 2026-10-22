@@ -373,3 +373,15 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 @media(max-width:700px){.yxy-weeks{padding:0 18px 14px}.yxy-weeks .lbl{display:none}.yxy-weeks button{padding:9px 12px;min-width:44px}}
 .yxy-weeks-lbl{display:none}
 @media(max-width:700px){.yxy-weeks-lbl{display:flex;align-items:center;position:sticky;left:-18px;z-index:1;flex:none;margin-left:-18px;padding:0 10px 0 18px;background:#120d00;font:bold 10px 'Courier New',ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase;color:#d99400;box-shadow:8px 0 10px -4px #120d00}}
+/* Botón "Compartir" y aviso de enlace copiado */
+.yxy-share{display:inline-flex;align-items:center;gap:6px;margin-left:auto;flex:none;font:bold 10px 'Courier New',ui-monospace,monospace;letter-spacing:1.5px;text-transform:uppercase;padding:6px 9px;background:transparent;color:#ffb000;border:1px solid #ffb000;cursor:pointer;white-space:nowrap}
+.yxy-share svg{width:13px;height:13px}
+.yxy-share:hover,.yxy-share:focus-visible{background:#ffb000;color:#0a0700}
+.card-title .yxy-share{margin-left:10px}
+.card-title{gap:8px}
+.section-title .yxy-share{order:3}
+@media(max-width:700px){.yxy-share span{display:none}.yxy-share{padding:7px}.yxy-share svg{width:15px;height:15px}}
+#yxy-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);z-index:2147483601;background:#ffb000;color:#0a0700;font:bold 13px 'Courier New',ui-monospace,monospace;letter-spacing:1px;padding:11px 16px;box-shadow:0 6px 20px #000c;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+#yxy-toast.on{opacity:1;transform:translate(-50%,0)}
+.yxy-flash{animation:yxyFlash 1.6s ease-out}
+@keyframes yxyFlash{0%,35%{box-shadow:0 0 0 3px #ffb000,0 0 26px #ffb000aa}100%{box-shadow:0 0 0 0 transparent}}

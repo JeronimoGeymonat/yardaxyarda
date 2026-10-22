@@ -11,7 +11,7 @@ const statTeamMap={'Tec Pue':'Borregos Puebla','UNAM':'Pumas CU','Tec Mty':'Borr
 const tileKey={'Borregos Guadalajara':'Borregos GDL','Borregos Monterrey':'Borregos MTY','Borregos Puebla':'Borregos PUE','Leones Anáhuac MEX':'Leones Anáhuac MX'};
 function teamSlug(n){return n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
 function teamBySlug(s){return standingsData.find(r=>teamSlug(r.team)===s)}
-function teamLeaders(team){const out=[];divisionData.grandes.forEach(cat=>{const rs=[...cat.rows].sort((a,b)=>b.values[0]-a.values[0]);rs.forEach(r=>{if(statTeamMap[r.team]===team){const rank=rs.findIndex(x=>x.values[0]===r.values[0])+1;out.push({cat:cat.title,metric:cat.metrics[0],name:r.name,val:r.values[0],rank,total:rs.length,extra:cat.metrics.slice(1).map((m,i)=>m+': '+fmt(r.values[i+1])).join(' · ')})}})});return out}
+function teamLeaders(team){const out=[];divisionData.grandes.forEach(cat=>{const rs=[...cat.rows].sort((a,b)=>b.values[0]-a.values[0]);rs.forEach(r=>{if(statTeamMap[r.team]===team){const rank=rs.indexOf(r)+1;out.push({cat:cat.title,metric:cat.metrics[0],name:r.name,val:r.values[0],rank,total:rs.length,extra:cat.metrics.slice(1).map((m,i)=>m+': '+fmt(r.values[i+1])).join(' · ')})}})});return out}
 function renderTeamPage(team){
  const stSrc=(typeof latestStandings!=='undefined')?latestStandings:standingsData,st=stSrc.find(r=>r.team===team),pos=st.pos??(stSrc.indexOf(st)+1),d=st.pf-st.pc;
  const tile=resultTiles[tileKey[team]||team];

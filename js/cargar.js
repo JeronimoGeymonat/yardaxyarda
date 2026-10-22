@@ -77,7 +77,8 @@
    "js/spotlight/16-semana4-player-stats-publicidad.js",
    "js/base/17-barra-semanas.js",
    "js/base/16-movil-semana-arriba.js",
-   "js/base/15-analitica-eventos.js"
+   "js/base/15-analitica-eventos.js",
+   "js/base/18-enlaces-compartir.js"
  ];
  window.YXY={};
  Promise.all(DATOS.map(n=>fetch('data/'+n+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('data/'+n+'.json');return r.json()}).then(j=>{YXY[n]=j})))

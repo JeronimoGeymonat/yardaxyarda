@@ -15,10 +15,10 @@ teamBySlug=function(s){return _teamBySlugG(s)||latestStandingsN.flatMap(g=>g.row
 teamOffDef=function(team){
  const nac=isNacTeam(team),OFF=nac?offense6N:offense6,DEF=nac?defense6N:defense6;
  const o=OFF.find(r=>r.team===team),d=DEF.find(r=>r.team===team);if(!o&&!d)return '';
- const rank=(arr,idx,v,hb)=>1+arr.filter(r=>hb?r.v[idx]>v:r.v[idx]<v).length,n=OFF.length;
+ const rank=(arr,idx,row,hb)=>{const v=row.v[idx];return 1+arr.filter(r=>hb?r.v[idx]>v:r.v[idx]<v).length+arr.slice(0,arr.indexOf(row)).filter(r=>r.v[idx]===v).length},n=OFF.length;
  const offDef=[['Yds por aire',0,true],['Yds por tierra',1,true],['Yds totales',2,true],['Primeros downs',3,true],['Puntos anotados',4,true],['Intercepciones',5,false],['Balones sueltos',6,false],['Castigos',7,false]];
  const defDef=[['Yds por aire permitidas',0,false],['Yds por tierra permitidas',1,false],['Yds totales permitidas',2,false],['Primeros downs permitidos',3,false],['Puntos permitidos',4,false],['Intercepciones',5,true],['Balones recuperados',6,true],['Castigos',7,false]];
- const tiles=(row,arr,defs)=>defs.map(([lbl,i,hb])=>{const r=rank(arr,i,row.v[i],hb);return `<div class="tp-stat${r<=3?' best':''}"><span>${lbl}</span><b>${fmt(row.v[i])}</b><em>#${r} de ${n}</em></div>`}).join('');
+ const tiles=(row,arr,defs)=>defs.map(([lbl,i,hb])=>{const r=rank(arr,i,row,hb);return `<div class="tp-stat${r<=3?' best':''}"><span>${lbl}</span><b>${fmt(row.v[i])}</b><em>#${r} de ${n}</em></div>`}).join('');
  return `<section class="tp-section"><div class="section-title"><h3>Estadísticas ofensivas</h3><span class="pill">Acumulado · Semana 6</span></div>${o?`<div class="tp-stats">${tiles(o,OFF,offDef)}</div>`:'<div class="tp-empty">Sin datos.</div>'}</section>
  <section class="tp-section"><div class="section-title"><h3>Estadísticas defensivas</h3><span class="pill">Acumulado · Semana 6</span></div>${d?`<div class="tp-stats">${tiles(d,DEF,defDef)}</div>`:'<div class="tp-empty">Sin datos.</div>'}<p class="note">El ranking (#) compara al equipo con los ${n} de la conferencia; en defensiva, menos yardas y puntos permitidos es mejor.</p></section>`;
 };
@@ -30,7 +30,7 @@ teamLeaders=function(team){
  const out=[];
  titles.forEach(title=>{for(const [wk,d] of weeks){const cat=(d[conf]||[]).find(c=>c.title===title);if(!cat)continue;
   const rs=[...cat.rows].sort((a,b)=>b.values[0]-a.values[0]),mine=rs.filter(r=>map[r.team]===team);if(!mine.length)continue;
-  mine.forEach(r=>{const rank=rs.findIndex(x=>x.values[0]===r.values[0])+1;out.push({cat:cat.title,metric:cat.metrics[0],name:r.name,val:r.values[0],rank,total:rs.length,week:wk,extra:cat.metrics.slice(1).map((m,i)=>m+': '+fmt(r.values[i+1])).join(' · ')})});break;}});
+  mine.forEach(r=>{const rank=rs.indexOf(r)+1;out.push({cat:cat.title,metric:cat.metrics[0],name:r.name,val:r.values[0],rank,total:rs.length,week:wk,extra:cat.metrics.slice(1).map((m,i)=>m+': '+fmt(r.values[i+1])).join(' · ')})});break;}});
  return out};
 function setDivision(dv){if(division===dv)return;division=dv;document.querySelectorAll('[data-division]').forEach(x=>{x.classList.toggle('active',x.dataset.division===dv);x.setAttribute('aria-pressed',x.dataset.division===dv)});$('search').value='';setup()}
 const _renderTeamPageG=renderTeamPage;

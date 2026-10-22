@@ -2,7 +2,7 @@
 
 Estadísticas de fútbol americano universitario de la ONEFA · Liga Mayor 2026 (conferencias **14 Grandes** y **Nacional**): líderes por semana, estadísticas de jugadores y equipos, tablas generales, resultados, calendario y páginas de cada equipo con su roster.
 
-Sitio estático: se publica en GitHub Pages tal cual, **sin compilar nada**.
+Sitio estático: se publica tal cual en Hostinger o GitHub Pages, **sin compilar nada**.
 
 ## Estructura
 
@@ -62,9 +62,38 @@ En GitHub Pages funciona directamente.
 2. Ve a **Settings → Pages → Build and deployment → Source: Deploy from a branch**, elige `main` y la carpeta `/ (root)`, y guarda.
 3. En uno o dos minutos GitHub Pages mostrará la URL (por ejemplo `https://tu-usuario.github.io/yardaxyarda/`).
 
-## Analítica (Google Analytics 4 · `G-XP9Q2SMLVE`)
+## Publicar en Hostinger
 
-- `js/base/00-google-analytics.js` carga Google Analytics (se llama desde `<head>` en `index.html`).
+1. En hPanel abre **Sitios web → Administrar → Administrador de archivos** y entra a la carpeta **`public_html`** (si hay un `default.php` o `index.php` de Hostinger, bórralo).
+2. Da clic en **Subir** y sube `yardaxyarda-hostinger.zip`. Luego clic derecho sobre el zip → **Extraer** → déjalo en `public_html`. Al terminar, `index.html` debe quedar directamente dentro de `public_html` junto a las carpetas `css`, `data`, `js` y `assets`. Borra el zip.
+3. El archivo `.htaccess` (incluido) activa la compresión y la caché; los datos (`data/*.json`) y la página siempre se sirven en su versión más reciente.
+4. Activa el **SSL** gratuito del dominio (hPanel → Seguridad → SSL) para que el sitio abra con `https://`.
+5. En Google Analytics actualiza la URL del flujo en **Administrar → Flujos de datos** con tu nuevo dominio (ID de medición `G-KNM0MF1JTT`).
+
+Para actualizar después, sube solo los archivos que cambiaron (por ejemplo `data/semana7.json`) encima de los anteriores.
+
+## Enlaces para compartir
+
+Cada semana, conferencia y vista tiene su propio enlace (ideal para Instagram):
+
+```
+https://TU-DOMINIO/#semana-7/grandes/top-qbs
+https://TU-DOMINIO/#semana-7/nacional/top-rbs
+https://TU-DOMINIO/#semana-7/grandes/top-wrs
+https://TU-DOMINIO/#semana-7/nacional/team-stats      (tabla general)
+https://TU-DOMINIO/#semana-7/grandes/insights
+https://TU-DOMINIO/#semana-7/grandes/overview
+https://TU-DOMINIO/#semana-7/nacional/player-stats
+```
+
+- Al abrir el enlace, la página cambia sola a esa semana, conferencia y vista y baja a la sección (con un destello ámbar).
+- Los botones **Compartir** de Top QBs, Top RBs, Top WRs, la Tabla general e Insights abren el menú de compartir del celular o copian el enlace en computadora.
+- Mientras navegas, la dirección del navegador se actualiza; también puedes copiarla de ahí.
+- Código: `js/base/18-enlaces-compartir.js`. Cada uso del botón se registra en Google Analytics como `compartir`.
+
+## Analítica (Google Analytics 4 · `G-KNM0MF1JTT`)
+
+- La etiqueta de Google (gtag.js, ID `G-KNM0MF1JTT`) está en el `<head>` de `index.html`. Justo antes se carga `js/base/00-consentimiento.js`, que respeta si el visitante rechazó las cookies.
 - `js/base/15-analitica-eventos.js` envía los eventos de clic y muestra el aviso de cookies la primera vez.
 
 | Evento | Cuándo | Parámetro principal |
@@ -78,5 +107,6 @@ En GitHub Pages funciona directamente.
 | `video_reproducir` / `video_sonido` | le da play / activa el sonido | `video` |
 | `credito_clic` | clic a un crédito de Instagram u otro enlace externo | `cuenta`, `url` |
 | `menu_clic` | clic en el menú lateral | `opcion` |
+| `compartir` | botón Compartir | `destino`, `titulo` |
 
 Todos llevan además `semana_actual` y `conferencia_actual`. Para usar los parámetros en los reportes, regístralos en GA4 → Administrar → Definiciones personalizadas.

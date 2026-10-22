@@ -46,7 +46,7 @@
  /* aviso de cookies (solo la primera vez) */
  let pref=null;try{pref=localStorage.getItem('yxy-cookies')}catch(e){}
  if(!pref){const bar=document.createElement('div');bar.id='yxy-cookies';bar.setAttribute('role','region');bar.setAttribute('aria-label','Aviso de cookies');
-  bar.innerHTML='<p>Usamos cookies de Google Analytics para saber cuántas personas visitan Yarda × Yarda y qué secciones usan. Sí usamos publicidad.</p><div><button type="button" data-ck="si">Aceptar</button><button type="button" data-ck="no">Rechazar</button></div>';
+  bar.innerHTML='<p>Usamos cookies de Google Analytics para saber cuántas personas visitan Yarda × Yarda y qué secciones usan. Sí usamos publicidad. <a href="privacidad.html">Aviso de privacidad</a></p><div><button type="button" data-ck="si">Aceptar</button><button type="button" data-ck="no">Rechazar</button></div>';
   document.body.appendChild(bar);
   bar.addEventListener('click',e=>{const b=e.target.closest('[data-ck]');if(!b)return;const ok=b.dataset.ck==='si';
    try{localStorage.setItem('yxy-cookies',ok?'si':'no')}catch(x){}

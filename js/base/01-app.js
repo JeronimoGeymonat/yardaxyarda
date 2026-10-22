@@ -13,7 +13,7 @@ const $=id=>document.getElementById(id);let division='grandes',tab='overview',se
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=v=>Number(v).toLocaleString('en-US');
 function rows(k){return categories[k].rows.filter(r=>(!$('group').value||r.team===$('group').value)&&(!$('search').value||(r.name+' '+r.team).toLowerCase().includes($('search').value.toLowerCase())))}
-function ranked(k){return [...rows(k)].sort((a,b)=>b.values[0]-a.values[0]).map((r,i,a)=>({...r,rank:a.findIndex(x=>x.values[0]===r.values[0])+1}))}
+function ranked(k){return [...rows(k)].sort((a,b)=>b.values[0]-a.values[0]).map((r,i)=>({...r,rank:i+1})) /* posiciones consecutivas 1,2,3…; en empate se respeta el orden de los datos */}
 function avatar(r){return `<span class="avatar">${esc(r.name.split(' ').map(n=>n[0]).slice(0,2).join(''))}</span>`}
 function person(r,k){return `<div class="person"><div class="name">${esc(r.name)}</div><div class="team">${esc(r.team)}</div><div class="team">${categories[k].metrics.slice(1).map((m,i)=>`${esc(m)}: ${fmt(r.values[i+1])}`).join(' · ')}</div></div>`}
 function render(){
