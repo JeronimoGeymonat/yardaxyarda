@@ -385,3 +385,9 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 #yxy-toast.on{opacity:1;transform:translate(-50%,0)}
 .yxy-flash{animation:yxyFlash 1.6s ease-out}
 @keyframes yxyFlash{0%,35%{box-shadow:0 0 0 3px #ffb000,0 0 26px #ffb000aa}100%{box-shadow:0 0 0 0 transparent}}
+
+/* Enlaces legales: pie de página y aviso de cookies */
+.yxy-flinks{width:100%;display:flex;justify-content:center;gap:18px;margin-top:14px}
+.yxy-flinks a{font:bold 11px 'Courier New',ui-monospace,monospace;letter-spacing:1.5px;text-transform:uppercase;color:#0c0905;text-decoration:underline;text-underline-offset:3px}
+#yxy-cookies p a{color:#ffb000;font-weight:bold;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.yxy-footer{flex-wrap:wrap}

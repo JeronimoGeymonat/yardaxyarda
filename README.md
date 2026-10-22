@@ -8,6 +8,7 @@ Sitio estático: se publica tal cual en Hostinger o GitHub Pages, **sin compilar
 
 ```
 index.html              Estructura de la página (HTML)
+privacidad.html         Aviso de privacidad (enlazado desde el aviso de cookies y el pie de página)
 css/styles.css          Estilos
 data/                   ← LOS DATOS. Para actualizar estadísticas, edita estos archivos
   semana3.json … semana7.json
@@ -77,17 +78,19 @@ Para actualizar después, sube solo los archivos que cambiaron (por ejemplo `dat
 Cada semana, conferencia y vista tiene su propio enlace (ideal para Instagram):
 
 ```
-https://TU-DOMINIO/#semana-7/grandes/top-qbs
-https://TU-DOMINIO/#semana-7/nacional/top-rbs
-https://TU-DOMINIO/#semana-7/grandes/top-wrs
-https://TU-DOMINIO/#semana-7/nacional/team-stats      (tabla general)
-https://TU-DOMINIO/#semana-7/grandes/insights
-https://TU-DOMINIO/#semana-7/grandes/overview
-https://TU-DOMINIO/#semana-7/nacional/player-stats
+https://yardaxyarda.com/#semana-7/grandes/top-qbs
+https://yardaxyarda.com/#semana-7/nacional/top-rbs
+https://yardaxyarda.com/#semana-7/grandes/top-wrs
+https://yardaxyarda.com/#semana-7/grandes/tackleador
+https://yardaxyarda.com/#semana-7/nacional/yds-mezcladas
+https://yardaxyarda.com/#semana-7/nacional/team-stats      (tabla general)
+https://yardaxyarda.com/#semana-7/grandes/insights
+https://yardaxyarda.com/#semana-7/grandes/overview
+https://yardaxyarda.com/#semana-7/nacional/player-stats
 ```
 
 - Al abrir el enlace, la página cambia sola a esa semana, conferencia y vista y baja a la sección (con un destello ámbar).
-- Los botones **Compartir** de Top QBs, Top RBs, Top WRs, la Tabla general e Insights abren el menú de compartir del celular o copian el enlace en computadora.
+- Los botones **Compartir** de Top QBs, Top RBs, Top WRs, Lider Tackleador, Lider Yds Mezcladas, la Tabla general e Insights abren el menú de compartir del celular o copian el enlace en computadora.
 - Mientras navegas, la dirección del navegador se actualiza; también puedes copiarla de ahí.
 - Código: `js/base/18-enlaces-compartir.js`. Cada uso del botón se registra en Google Analytics como `compartir`.
 
@@ -110,3 +113,11 @@ https://TU-DOMINIO/#semana-7/nacional/player-stats
 | `compartir` | botón Compartir | `destino`, `titulo` |
 
 Todos llevan además `semana_actual` y `conferencia_actual`. Para usar los parámetros en los reportes, regístralos en GA4 → Administrar → Definiciones personalizadas.
+
+## Aviso de privacidad
+
+`privacidad.html` es una página independiente con el aviso de privacidad (datos de navegación, Google Analytics, publicidad, derechos ARCO) y botones para que el visitante acepte o rechace la medición. El correo de contacto es `contacto@yardaxyarda.com`: créalo en Hostinger (Correos electrónicos) o cámbialo en el archivo.
+
+## Rankings
+
+Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 2, 3, 4, 5…). Si dos jugadores empatan, va primero el que aparece primero en `data/semanaN.json`; para cambiar quién va antes, cambia el orden de las filas en el archivo.

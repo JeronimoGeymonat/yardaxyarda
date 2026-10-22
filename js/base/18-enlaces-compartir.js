@@ -1,14 +1,14 @@
 /* =========================================================================
    Enlaces por semana / conferencia / vista + botón "Compartir"
    Formato:  #semana-7/nacional/team-stats
-     vistas: overview · player-stats · team-stats · insights · top-qbs · top-rbs · top-wrs
+     vistas: overview · player-stats · team-stats · insights · top-qbs · top-rbs · top-wrs · tackleador · yds-mezcladas
    - Al abrir un enlace, la página cambia a esa semana/conferencia/vista y baja a la sección.
    - Mientras navegas, la dirección del navegador se actualiza sola (se puede copiar).
-   - Botones "Compartir" en Top QBs / Top RBs / Top WRs y en la Tabla general.
+   - Botones "Compartir" en Top QBs / Top RBs / Top WRs / Lider Tackleador / Lider Yds Mezcladas y en la Tabla general.
    ========================================================================= */
 (function(){
  const RE=/^#semana-(\d+)\/(grandes|nacional)(?:\/([a-z0-9-]+))?\/?$/;
- const CARDS={'top-qbs':'Top QBs','top-rbs':'Top RBs','top-wrs':'Top WRs'};
+ const CARDS={'top-qbs':'Top QBs','top-rbs':'Top RBs','top-wrs':'Top WRs','tackleador':'Lider Tackleador','yds-mezcladas':'Lider Yds Mezcladas'};
  const DIV={grandes:'14 Grandes',nacional:'Nacional'};
  const VISTA={'overview':'Overview','player-stats':'Player stats','team-stats':'Tabla general','insights':'Insights'};
  const base=()=>location.href.split('#')[0];
