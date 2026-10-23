@@ -438,4 +438,4 @@ body.div-grandes :is(#standings,#st4,#offense6,#defense6,#fd6,#yxy-defense7) img
 .spot-w7p .w7-head{margin:14px 0 0}.spot-w7p .w7-txt+video,.spot-w7p .w7-txt+small+video{margin-top:20px}
 /* Portadas de nota (usa el estilo de la portada de semana 8) */
 .hero-nota{cursor:pointer}.hero-nota:focus-visible{outline:3px solid #ffb000;outline-offset:5px}.hero-nota:hover .hero8-cap h2{text-decoration:underline;text-underline-offset:6px}.hero-nota:hover .hero8-leer{background:#ffcf66}
-.hero-nota .hero8-img{object-position:50% 40%}
+.hero-nota .hero8-img{object-position:50% 50%}

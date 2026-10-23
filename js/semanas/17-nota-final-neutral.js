@@ -3,10 +3,10 @@
  const NOTA='notas/final-campo-neutral.html',TIT='¿Y si la final de ONEFA se jugara en campo neutral?';
  const f=document.createElement('figure');f.className='hero8 hero-nota';f.id='hero-final-neutral';f.hidden=true;
  f.setAttribute('role','link');f.setAttribute('tabindex','0');f.setAttribute('aria-label','Leer la nota: '+TIT);
- f.innerHTML='<img class="hero8-img" src="assets/images/final-neutral-olimpico.webp" alt="Afición en las gradas del Estadio Olímpico Universitario durante un partido de fútbol americano">'
+ f.innerHTML='<img class="hero8-img" src="assets/images/final-neutral-portada.webp" alt="Pintura estilo fresco de un estadio universitario visto desde lo alto, enmarcado por columnas y ángeles">'
   +'<figcaption class="hero8-cap"><p class="hero8-kicker">Opinión y análisis · ONEFA</p><h2>'+TIT+'</h2>'
   +'<p class="hero8-vs">Una oportunidad para transformar el fútbol americano universitario en México.</p>'
-  +'<ul class="hero8-info"><li>🏟️ Olímpico Universitario</li><li>🏆 Finales de conferencia</li><li>💬 El debate</li></ul>'
+  
   +'<span class="hero8-leer">Leer la nota →</span></figcaption>';
  before.parentNode.insertBefore(f,before);
  const view=document.createElement('div');view.className='yxy-note-view';view.setAttribute('role','dialog');view.setAttribute('aria-modal','true');view.setAttribute('aria-label',TIT);view.setAttribute('aria-hidden','true');
