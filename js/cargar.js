@@ -73,6 +73,7 @@
    "js/insights/08-castigos-s7.js",
    "js/semanas/14-portada-s8.js",
    "js/semanas/15-nota-guerra-civil.js",
+   "js/semanas/17-nota-final-neutral.js",
    "js/spotlight/14-semana3-publicidad.js",
    "js/spotlight/15-semana7-team-stats-publicidad.js",
    "js/spotlight/16-semana4-player-stats-publicidad.js",
@@ -91,7 +92,7 @@
  /* Versión de los archivos: súbela (por ejemplo 20261029) cada vez que actualices código o estilos,
     así los navegadores y el caché de Hostinger descargan la versión nueva en lugar de la vieja.
     Cámbiala también en index.html (styles.css, 00-consentimiento.js y cargar.js). */
- const VERSION='20261022n';
+ const VERSION='20261022o';
  window.YXY={};
  Promise.all(DATOS.map(n=>fetch('data/'+n+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('data/'+n+'.json');return r.json()}).then(j=>{YXY[n]=j})))
   .then(()=>{
