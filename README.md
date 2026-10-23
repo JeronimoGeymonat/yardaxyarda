@@ -134,7 +134,7 @@ Las posiciones en líderes, páginas de equipo y gráficas son consecutivas (1, 
 
 ## Versión de archivos (caché)
 
-Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022k`).
+Para que los visitantes —y el caché de Hostinger— no se queden con estilos o código viejos, los archivos se cargan con un número de versión (`?v=20261022m`).
 Cada vez que subas cambios de **código o estilos** (`css/`, `js/`), cambia ese número por uno nuevo (por ejemplo `20261029`) en:
 
 - `js/cargar.js` → `const VERSION='…'`
@@ -153,3 +153,13 @@ Si después de subir algo sigues viendo la versión anterior en Hostinger, en hP
 - Enlaces: `#semana-7/grandes/resultados`, `#semana-8/nacional/calendario`, `notas/previa-guerra-civil.html`.
 - **Top 5 por posición** (Top QBs, RBs, WRs, Tackleador, Yds Mezcladas) en las semanas 4–7, 14 Grandes y Nacional: cada tarjeta tiene **Post en X** (con el top 5 en el texto) e **Historia IG**, que crea la imagen de la tabla (`js/spotlight/19-top5-redes.js`). Para agregar una semana, súmala a `SEMANAS`.
 - Antes de compartir en Instagram se muestra una **vista previa** de la imagen con los botones "Compartir en Instagram" y "Descargar imagen".
+
+### Visitas desde Instagram y otras redes
+
+`js/base/00-consentimiento.js` detecta si la visita llega desde la app de Instagram (su navegador interno), Facebook, X, TikTok, WhatsApp o LinkedIn —por el navegador de la app, la página de origen (`l.instagram.com`, `t.co`…) o la etiqueta `utm_source`— y:
+- hace que GA4 la cuente en el canal **Organic Social** con fuente `instagram` (aunque Instagram no mande la página de origen);
+- envía el evento `llegada_red_social` (una vez por visita) con `red`, `metodo` (app / referencia / utm) y `en_app`;
+- guarda las propiedades de usuario `red_origen` y `navegador_app`.
+
+Dónde verlo: GA4 → Informes → Adquisición → **Adquisición de tráfico** (Grupo de canales = Organic Social; Fuente/medio = `instagram / social`) y Eventos → `llegada_red_social`.
+Enlace recomendado para la biografía de Instagram: `https://yardaxyarda.com/?utm_source=instagram&utm_medium=social&utm_campaign=bio`
